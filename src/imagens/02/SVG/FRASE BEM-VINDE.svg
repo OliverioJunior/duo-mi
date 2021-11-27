@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3301" height="1555" viewBox="0 0 3301 1555">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 61.621px;
+      }
+
+      .cls-1 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-2 {
+        fill: #8e8e8e;
+        font-family: COCOGOOSE;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .cls-3 {
+        fill: #f6b13a;
+      }
+
+      .cls-4 {
+        fill: #a455ff;
+      }
+
+      .cls-5 {
+        fill: #8f8f8f;
+      }
+
+      .cls-6 {
+        fill: #6ca6db;
+      }
+    </style>
+    <path id="text-path" d="Z"/>
+  </defs>
+  <text id="FRASE_BEM-VINDE" data-name="FRASE BEM-VINDE" class="cls-1" transform="rotate(31.787)"><textPath xlink:href="#text-path"><tspan class="cls-2">Seja <tspan class="cls-3">bem-vinde<tspan class="cls-4"> <tspan class="cls-5">ao nosso</tspan> <tspan class="cls-6">estúdio</tspan></tspan></tspan>!</tspan></textPath></text>
+</svg>
