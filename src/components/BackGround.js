@@ -118,6 +118,13 @@ function BackGround() {
                 </div>
                 <div className = "meio">
                     
+                    <div className = "fotoPrincipal">
+                        
+                    </div>
+                    <div className = 'navBarra'>
+                        <Navbar/>
+                    </div>
+
                 </div>
                 <div className = "meioInferior">
                     
