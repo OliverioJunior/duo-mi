@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button.js';
+import Tela_01 from './telas/cantoSuperiorEsquerdo/Tela-01.js';
+import Tela_07 from './telas/cantoInferiorEsquerdo/Tela-07.js';
+import Tela_05 from './telas/meio/Tela-05.js';
 import './BackGround.css'
 import Navbar from './Navbar'
 
@@ -10,7 +13,7 @@ function BackGround() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-    window.addEventListener('click', (e) => {
+    /* window.addEventListener('click', (e) => {
         const offsetX = e.offsetX
         const offsetY = e.offsetY
         console.log(offsetX, offsetY)
@@ -20,7 +23,7 @@ function BackGround() {
             behavior: 'smooth'
         });
 
-    })
+    }) */
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
@@ -37,106 +40,29 @@ function BackGround() {
 
             <div className='back-ground'>
 
-                <div className='cantoSuperiorEsquerdo'>
-                    <div className="Emily">
-
-                    </div>
-                    <div className="emilyNome">
-                        <div className="emilyE">
-
-                        </div>
-                        <div className="emilyM">
-
-                        </div>
-                        <div className="emilyI">
-
-                        </div>
-                        <div className="emilyL">
-
-                        </div>
-                        <div className="emilyY">
-
-                        </div>
-                    </div>
-                    <div className='fotoDupla'>
-
-                    </div>
-                    <div className='imagemTexto'>
-
-                    </div>
-                    <div className='tamis'>
-
-                    </div>
-                    <div className='tamisNome'>
-                        <div className='tamisT'>
-
-                        </div>
-                        <div className='tamisA' >
-
-                        </div>
-                        <div className='tamisM'>
-
-                        </div>
-                        <div className='tamisI'>
-
-                        </div>
-                        <div className='tamisS'>
-
-                        </div>
-                    </div>
-                </div>
-                <div className = "cantoMeioEsquerdo">
-                    
-                </div>
-                <div className = "cantoInferiorEsquerdo">
-                    <div className = 'desenhoArea'>
-                        
-                    </div>
-                    <div className = 'selecionarCores'>
-                        <button className='vermelho'>
-
-                        </button>
-                        <button className='amarelo'>
-
-                        </button>
-                        <button className ='verde'>
-
-                        </button>
-                        <button className='azul'>
-
-                        </button>
-                        <button className='roxo'>
-
-                        </button>
-                            <button className='salvarDesenho'>
-
-                            </button>
-                    </div>
-                </div>
-                <div className = "meioSuperior">
-                    
-                </div>
-                <div className = "meio">
-                    
-                    <div className = "fotoPrincipal">
-                        
-                    </div>
-                    <div className = 'navBarra'>
-                        <Navbar/>
-                    </div>
+                <Tela_01 />
+                <div className="cantoMeioEsquerdo">
 
                 </div>
-                <div className = "meioInferior">
-                    
+                <Tela_07 />
+                <div className="meioSuperior">
                 </div>
-                <div className = "cantoSuperiorDireito">
-                    
+                
+                    <Tela_05 />
+
+               
+
+                <div className="meioInferior">
+
                 </div>
-                <div className = "cantoMeioDireito">
-                    
+                <div className="cantoSuperiorDireito">
+
                 </div>
-                <div className = "cantoInferiorDireito">
-                    
+                <div className="cantoMeioDireito">
+
+                </div>
+                <div className="cantoInferiorDireito">
+
                 </div>
             </div>
 

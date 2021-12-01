@@ -1,0 +1,63 @@
+.cantoInferiorEsquerdo{
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    grid-row-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desenhoArea{
+    width: 80vw;
+    height: 65vh;
+    border: 2px solid black;
+    border-radius: 40px;
+    background: white;
+    margin: 0;
+
+}
+
+.selecionarCores{
+    width: 100px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vermelho{
+    width:var(--dimensao);
+    height:var(--dimensao);
+    border-radius: 50%;
+    background-color: red;
+}
+.amarelo{
+    width:var(--dimensao);
+    height:var(--dimensao);
+    border-radius: 50%;
+    background-color: yellow;
+}
+.verde{
+    width:var(--dimensao);
+    height:var(--dimensao);
+    border-radius: 50%;
+    background-color: green;
+}
+.azul{
+    width:var(--dimensao);
+    height:var(--dimensao);
+    border-radius: 50%;
+    background-color: blue;
+}
+.roxo{
+    width:var(--dimensao);
+    height:var(--dimensao);
+    border-radius: 50%;
+    background-color: purple;
+}
+.salvarDesenho{
+    width:100px;
+    height:120px;
+     background-image: url("../../../imagens/06/ARQUIVO-ENVIE.png");
+     background-size: cover;    
+}
