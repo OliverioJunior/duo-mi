@@ -1,8 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Tela-01.css"
+ 
 
+window.onload = () =>{
+    const entidade = document.querySelector(".Emily")
+    const corpo = document.querySelector("body")
+    const letraE = document.querySelector(".emilyE")
+    let fator_lupa = 1.2
 
-
+    entidade.addEventListener( "mouseover", ()=>{
+         entidade.style.width = (entidade.clientWidth + 2) + "px"; 
+         entidade.style.height = (entidade.clientHeight + 2) + "px"; 
+        
+    })
+    entidade.addEventListener( "mouseout", ()=>{
+         entidade.style.width = (entidade.clientWidth -2 ) + "px"; 
+         entidade.style.height = (entidade.clientHeight - 2) + "px"; 
+        
+    })
+    letraE.addEventListener( "click", (e)=>{
+        console.log(onDragStart(e))
+        
+    })
+}
+function onDragStart(e) {
+    e.dataTransfer.setData("text/plain", e.target.id);
+    e.currentTarget.style.backgroundColor = 'yellow';
+}
 const Tela_01 = () => {
     return (
 
@@ -12,19 +36,19 @@ const Tela_01 = () => {
 
             </div>
             <div className="emilyNome">
-                <div className="emilyE">
+                <div className="emilyE" draggable= "true">
 
                 </div>
-                <div className="emilyM">
+                <div className="emilyM" draggable= "true">
 
                 </div>
-                <div className="emilyI">
+                <div className="emilyI" draggable= "true">
 
                 </div>
-                <div className="emilyL">
+                <div className="emilyL" draggable= "true">
 
                 </div>
-                <div className="emilyY">
+                <div className="emilyY" draggable= "true">
 
                 </div>
             </div>

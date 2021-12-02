@@ -5,7 +5,7 @@ import Tela_01 from './telas/cantoSuperiorEsquerdo/Tela-01.js';
 import Tela_07 from './telas/cantoInferiorEsquerdo/Tela-07.js';
 import Tela_05 from './telas/meio/Tela-05.js';
 import './BackGround.css'
-import Navbar from './Navbar'
+
 
 function BackGround() {
     const [click, setClick] = useState(false);

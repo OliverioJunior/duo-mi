@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(6, .1fr);
     grid-template-rows: repeat(4,.1fr);
+    
 }
 .Emily{
     width: 400px;
@@ -14,6 +15,7 @@
     grid-column-start: 1;
     grid-column-end: 1;
     cursor:pointer;
+    
 
 }
 .emilyNome{
@@ -29,26 +31,31 @@
     background-image: url("../../../imagens/05/E_EMILY.png");
     height: 114px;
     width:91px;
+    cursor:pointer;
 }
 .emilyM{
     background-image: url("../../../imagens/05/M-EMILY.png");
     height: 115px;
     width:129px;
+    cursor:pointer;
 }
 .emilyI{
     background-image: url("../../../imagens/05/I-EMILY.png");
     height: 118px;
     width:99px;
+    cursor:pointer;
 }
 .emilyL{
     background-image: url("../../../imagens/05/L-EMILY.png");
     height: 134px;
     width:100px;
+    cursor:pointer;
 }
 .emilyY{
     background-image: url("../../../imagens/05/Y-EMILY.png");
     height: 130px;
     width:97px;
+     cursor:pointer;
 }
 .fotoDupla{
     background-image: url("../../../imagens/05/DUOMI.png");
@@ -92,24 +99,29 @@
     background-image: url("../../../imagens/05/T-TAMIS.png");
     height: 148px;
     width: 63px;
+    cursor:pointer;
 }
 .tamisA{
     background-image: url("../../../imagens/05/A-TAMIS.png");
     height: 115px;
     width: 111px;
+    cursor:pointer;
 }
 .tamisM{
     background-image: url("../../../imagens/05/M-TAMIS.png");
     height:     110px;
     width: 97px;
+    cursor:pointer;
 }
 .tamisI{
     background-image: url("../../../imagens/05/I-TAMIS.png");
     height: 132px;
     width: 67px;
+     cursor:pointer;
 }
 .tamisS{
     background-image: url("../../../imagens/05/S-TAMIS.png");
     height: 134px;
     width: 94px;
+    cursor:pointer;
 }
