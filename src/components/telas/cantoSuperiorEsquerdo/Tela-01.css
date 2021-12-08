@@ -6,6 +6,7 @@
     grid-template-columns: repeat(6, .1fr);
     grid-template-rows: repeat(4,.1fr);
     
+    
 }
 .Emily{
     width: 400px;
@@ -26,6 +27,7 @@
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 1;
+    
 }
 .emilyE{
     background-image: url("../../../imagens/05/E_EMILY.png");
@@ -124,4 +126,12 @@
     height: 134px;
     width: 94px;
     cursor:pointer;
+}
+
+.modal{
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.247);
+    display: none;
+    position: fixed;
 }

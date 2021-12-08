@@ -1,32 +1,38 @@
 import React, {useState} from "react";
 import "./Tela-01.css"
- 
 
+const entidade = document.querySelector(".Emily")
+const letraE = document.querySelector(".emilyE")
+const _modal = document.querySelector('.modal')
+
+const [modal, setModal] = useState()
+modal = _modal.style.display
+entidade.addEventListener( "click", ()=>{
+    modal = "block"
+    console.log('clicou')
+})
 window.onload = () =>{
-    const entidade = document.querySelector(".Emily")
-    const corpo = document.querySelector("body")
-    const letraE = document.querySelector(".emilyE")
-    let fator_lupa = 1.2
-
+    
     entidade.addEventListener( "mouseover", ()=>{
-         entidade.style.width = (entidade.clientWidth + 2) + "px"; 
-         entidade.style.height = (entidade.clientHeight + 2) + "px"; 
-        
+        entidade.style.width = (entidade.clientWidth + 1) + "px"; 
+        entidade.style.height = (entidade.clientHeight + 1) + "px"; 
     })
+    
     entidade.addEventListener( "mouseout", ()=>{
-         entidade.style.width = (entidade.clientWidth -2 ) + "px"; 
-         entidade.style.height = (entidade.clientHeight - 2) + "px"; 
-        
-    })
-    letraE.addEventListener( "click", (e)=>{
-        console.log(onDragStart(e))
-        
+        entidade.style.width = (entidade.clientWidth -1 ) + "px"; 
+        entidade.style.height = (entidade.clientHeight - 1) + "px"; 
     })
 }
-function onDragStart(e) {
-    e.dataTransfer.setData("text/plain", e.target.id);
-    e.currentTarget.style.backgroundColor = 'yellow';
-}
+window.addEventListener('click',(e)=>{
+    if(e.target.className === "modal"){
+       setModal = "none"
+    }
+})
+    
+
+        
+        
+    
 const Tela_01 = () => {
     return (
 
@@ -35,20 +41,21 @@ const Tela_01 = () => {
             <div className="Emily">
 
             </div>
+            <div className="modal"/>
             <div className="emilyNome">
-                <div className="emilyE" draggable= "true">
+                <div className="emilyE" >
 
                 </div>
-                <div className="emilyM" draggable= "true">
+                <div className="emilyM" >
 
                 </div>
-                <div className="emilyI" draggable= "true">
+                <div className="emilyI" >
 
                 </div>
-                <div className="emilyL" draggable= "true">
+                <div className="emilyL" >
 
                 </div>
-                <div className="emilyY" draggable= "true">
+                <div className="emilyY" >
 
                 </div>
             </div>

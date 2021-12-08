@@ -41,16 +41,14 @@ function BackGround() {
             <div className='back-ground'>
 
                 <Tela_01 />
-                <div className="cantoMeioEsquerdo">
-
-                </div>
+                <div className="cantoMeioEsquerdo"/>
                 <Tela_07 />
                 <div className="meioSuperior">
                 </div>
-                
-                    <Tela_05 />
 
-               
+                <Tela_05 />
+
+
 
                 <div className="meioInferior">
 
