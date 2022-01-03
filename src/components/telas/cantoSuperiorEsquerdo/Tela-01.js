@@ -1,46 +1,28 @@
 import React, {useState} from "react";
 import "./Tela-01.css"
 
-const entidade = document.querySelector(".Emily")
-const letraE = document.querySelector(".emilyE")
-const _modal = document.querySelector('.modal')
-
-const [modal, setModal] = useState()
-modal = _modal.style.display
-entidade.addEventListener( "click", ()=>{
-    modal = "block"
-    console.log('clicou')
-})
-window.onload = () =>{
-    
-    entidade.addEventListener( "mouseover", ()=>{
-        entidade.style.width = (entidade.clientWidth + 1) + "px"; 
-        entidade.style.height = (entidade.clientHeight + 1) + "px"; 
-    })
-    
-    entidade.addEventListener( "mouseout", ()=>{
-        entidade.style.width = (entidade.clientWidth -1 ) + "px"; 
-        entidade.style.height = (entidade.clientHeight - 1) + "px"; 
-    })
-}
-window.addEventListener('click',(e)=>{
-    if(e.target.className === "modal"){
-       setModal = "none"
-    }
-})
-    
-
-        
-        
-    
 const Tela_01 = () => {
+
+    window.onload = () =>{
+      
+    }
+   
+
+
+
+
     return (
 
         <div className='cantoSuperiorEsquerdo'>
 
             <div className="Emily">
-
+                <div className ="adesivo"/>
+                <div className="balao"/>
+                <div className="seta_curva"/>
             </div>
+                <div className="plantinha"/>
+                    
+            
             <div className="modal"/>
             <div className="emilyNome">
                 <div className="emilyE" >

@@ -16,17 +16,53 @@
     grid-column-start: 1;
     grid-column-end: 1;
     cursor:pointer;
+    transform: translate(50px,50px);
+    z-index: 1;
     
+    
+}
+.adesivo{
+    display: flex;
+    background-image: url("../../../imagens/05/FITA.png");
+    background-size: cover;
+    width: 264px;
+    height: 100px;
+    transform: translate(53px) rotate(354deg);
+}
+.balao{
+    width:140px;
+    height:101px;
+    background-image: url("../../../imagens/05/rabisco_balao.png");
+    background-size: cover;
+    transform: translate(0px, 50px) rotate(350deg);
 
+}
+.seta_curva{
+    width:140px;
+    height: 73px;
+    background-image: url("../../../imagens/05/seta_curva.png");
+    background-size: cover;
+    transform: translate(350px,-80px);
+}
+.plantinha{
+    width:218px;
+    height: 300px;
+    background-image: url("../../../imagens/05/plantinha.png");
+    background-size: cover;
+    transform: translate(-70px,-120px) rotate(10deg);
+   
+    
 }
 .emilyNome{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transform: translate(0px,-80px);
     grid-column-start: 2;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 1;
+   
     
 }
 .emilyE{
@@ -78,6 +114,7 @@
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 2;
+    transform: translate();
 }
 .tamis{
     background-image: url("../../../imagens/05//FRAME-TAMIS.png");

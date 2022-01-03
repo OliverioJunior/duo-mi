@@ -9,7 +9,7 @@
 }
 .desenhoArea{
     width: 80vw;
-    height: 65vh;
+    height: 80vh;
     border: 2px solid black;
     border-radius: 40px;
     background: white;
@@ -29,31 +29,31 @@
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
-    background-color: red;
+    background-color: #F0523C;
 }
 .amarelo{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
-    background-color: yellow;
+    background-color: #F8A74E;
 }
 .verde{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
-    background-color: green;
+    background-color: #64885B;
 }
 .azul{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
-    background-color: blue;
+    background-color: #1A93AA;
 }
 .roxo{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
-    background-color: purple;
+    background-color: #B17C95;
 }
 .salvarDesenho{
     width:100px;
