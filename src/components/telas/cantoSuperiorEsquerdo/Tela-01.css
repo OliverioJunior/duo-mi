@@ -2,11 +2,12 @@
     width:100vw;
     height: 100vh;
     border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(6, .1fr);
-    grid-template-rows: repeat(4,.1fr);
-    
-    
+    display: flex;
+    flex-direction: column;
+        
+}
+.container{
+    display: flex;
 }
 .Emily{
     width: 400px;
@@ -53,6 +54,11 @@
    
     
 }
+.container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .emilyNome{
     display: flex;
     justify-content: space-around;
@@ -94,6 +100,9 @@
     height: 130px;
     width:97px;
      cursor:pointer;
+}
+.container-3{
+    display: flex;
 }
 .fotoDupla{
     background-image: url("../../../imagens/05/DUOMI.png");
