@@ -1,7 +1,48 @@
 .cantoInferiorDireito{
     width:100vw;
     height:100vh;
+    display: grid;
     grid-area:tela09;
-    background-image: url("../../../imagens/04/TV-COMPLETA.png");
+    grid-template-areas: "planta01 tv planta02";
+    
+}
+.plantaVerdeTv{
+    background-image: url("../../../imagens/04/Plantinhas_verde.png");
     background-size: cover;
+    width: 186px;
+    height:257px;
+    grid-area: planta01;
+     transform: translate(102px,200px)
+}
+.plantaRosaTv{
+    background-image: url("../../../imagens/04/Plantinha_roxa.png");
+    background-size: cover;
+    width: 157px;
+    height:257px;
+    grid-area: planta02;
+    transform: translate(-65px,80px);
+}
+.televisor{
+    background-image: url("../../../imagens/04/tv.png");
+    background-size: cover;
+    width: 900px;
+    height:535px;
+    grid-area: tv;
+    display: flex;
+}
+.botaoPlay{
+    background-image: url("../../../imagens/04/botão\ play.png");
+    background-size: cover;
+    width: 220px;
+    height: 220px;
+    align-self: center;
+    transform: translate(265px,-10px)
+}
+.cursor{
+    background-image: url("../../../imagens/04/CURSOR\ -\ TV.png");
+    background-size: cover;
+    width: 70px;
+    height: 80px;
+    align-self: center;
+    transform: translate(170px,30px)
 }
