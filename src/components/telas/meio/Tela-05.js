@@ -4,15 +4,9 @@ import Navbar from "../../Navbar"
 const Tela_05 = () => {
     return(
         <div className = "meio">
-                        
-        <div className = "fotoPrincipal">
-            
+          <div className = "fotoPrincipal"/>
+          <Navbar  className = 'navBarra'/>
         </div>
-        <div className = 'navBarra'>
-            <Navbar/>
-        </div>
-    
-    </div>
     )
 }
 

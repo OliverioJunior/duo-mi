@@ -14,18 +14,13 @@ function BackGround() {
     const [button, setButton] = useState(true);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
-    /* window.addEventListener('click', (e) => {
-        const offsetX = e.offsetX
-        const offsetY = e.offsetY
-        console.log(offsetX, offsetY)
-        window.scroll({
-            top: offsetX,
-            left: offsetY,
-            behavior: 'smooth'
-        });
-
-    }) */
+    function process_touchmove(ev) {
+        // Set call preventDefault()
+        ev.preventDefault();
+        console.log(ev)
+      }
+     window.addEventListener('touchmove', process_touchmove, false)
+     
 
     const showButton = () => {
         if (window.innerWidth <= 960) {

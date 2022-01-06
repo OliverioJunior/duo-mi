@@ -5,6 +5,7 @@
     grid-area:tela09;
     grid-template-areas: "planta01 tv planta02";
     
+    
 }
 .plantaVerdeTv{
     background-image: url("../../../imagens/04/Plantinhas_verde.png");
@@ -12,7 +13,7 @@
     width: 186px;
     height:257px;
     grid-area: planta01;
-     transform: translate(102px,200px)
+    transform: translate(102px,200px)
 }
 .plantaRosaTv{
     background-image: url("../../../imagens/04/Plantinha_roxa.png");

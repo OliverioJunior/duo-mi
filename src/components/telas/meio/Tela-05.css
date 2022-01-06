@@ -4,6 +4,7 @@
     height: 100vh;
     grid-area:tela05;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
