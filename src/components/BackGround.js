@@ -6,6 +6,7 @@ import Tela_07 from './telas/cantoInferiorEsquerdo/Tela-07.js';
 import Tela_05 from './telas/meio/Tela-05.js';
 import Tela_03 from './telas/cantoSuperiorDireito/Tela-03.js';
 import './BackGround.css'
+import Tela_09 from './telas/cantoInferiorDireito/Tela-09.js';
 
 
 function BackGround() {
@@ -58,9 +59,7 @@ function BackGround() {
                 <div className="cantoMeioDireito">
 
                 </div>
-                <div className="cantoInferiorDireito">
-
-                </div>
+                <Tela_09/>
             </div>
 
 

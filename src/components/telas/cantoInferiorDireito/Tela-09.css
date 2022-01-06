@@ -1,0 +1,7 @@
+.cantoInferiorDireito{
+    width:100vw;
+    height:100vh;
+    grid-area:tela09;
+    background-image: url("../../../imagens/04/TV-COMPLETA.png");
+    background-size: cover;
+}

@@ -29,14 +29,3 @@ body {
 }
 
 
-.cantoInferiorDireito{
-    width:150vw;
-    height:100vh;
-    border:2px solid black;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start:3;
-    grid-row-end: 4;
-    background-image: url("../imagens/04/TV-COMPLETA.png");
-    background-size: cover;
-}

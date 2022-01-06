@@ -13,6 +13,7 @@
     width: 300px;
     height: 300px;
     justify-content: center;
+    display: flex;
 }
 .navBarra{
     width: 100vw;
