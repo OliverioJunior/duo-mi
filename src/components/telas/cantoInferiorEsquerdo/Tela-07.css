@@ -1,7 +1,7 @@
 .cantoInferiorEsquerdo{
     width: 100vw;
     height: 100vh;
-    grid-row-end: 4;
+    grid-area:tela07;
     display: flex;
     align-items: center;
     justify-content: center;

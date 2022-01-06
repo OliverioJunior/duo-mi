@@ -20,23 +20,14 @@ body {
  
 .back-ground{
     display: grid;
+    grid-template-areas: 
+    "tela01 tela02 tela03"
+    "tela04 tela05 tela06"
+    "tela07 tela08 tela09";
     grid-template-columns: repeat(3,100vw);
     grid-template-rows: repeat(3,100vh);
 }
 
-
-
-.cantoSuperiorDireito{
-    width:100vw;
-    height:150vh;
-    border:2px solid black;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start:2;
-    grid-row-end: 1;
-    background-image: url("../imagens/03/PC-ANTIGO.png");
-    background-size: cover;
-}
 
 .cantoInferiorDireito{
     width:150vw;

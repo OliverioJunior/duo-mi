@@ -1,11 +1,7 @@
 .cantoSuperiorDireito{
     width:100vw;
     height:150vh;
-    border:2px solid black;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start:2;
-    grid-row-end: 1;
-    background-image: url("../../../imagens/03/PC-ANTIGO.png");
+    grid-area:tela03;
+    background-image: url("../../../imagens/03/pcmodificado.png");
     background-size: cover;
 }
