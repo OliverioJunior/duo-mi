@@ -1,7 +1,6 @@
 .cantoInferiorEsquerdo{
     width: 100vw;
     height: 100vh;
-    border: 2px solid black;
     grid-row-end: 4;
     display: flex;
     align-items: center;
@@ -58,6 +57,7 @@
 .salvarDesenho{
     width:100px;
     height:120px;
-     background-image: url("../../../imagens/06/ARQUIVO-ENVIE.png");
-     background-size: cover;    
+    background-image: url("../../../imagens/06/ARQUIVO-ENVIE.png");
+    background-size: cover; 
+    border:none;   
 }

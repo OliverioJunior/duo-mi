@@ -4,6 +4,7 @@ import { Button } from './Button.js';
 import Tela_01 from './telas/cantoSuperiorEsquerdo/Tela-01.js';
 import Tela_07 from './telas/cantoInferiorEsquerdo/Tela-07.js';
 import Tela_05 from './telas/meio/Tela-05.js';
+import Tela_03 from './telas/cantoSuperiorDireito/Tela-03.js';
 import './BackGround.css'
 
 
@@ -40,22 +41,20 @@ function BackGround() {
 
             <div className='back-ground'>
 
-                <Tela_01 />
+                <Tela_01/>
                 <div className="cantoMeioEsquerdo"/>
-                <Tela_07 />
+                <Tela_07/>
                 <div className="meioSuperior">
                 </div>
 
-                <Tela_05 />
+                <Tela_05/>
 
 
 
                 <div className="meioInferior">
 
                 </div>
-                <div className="cantoSuperiorDireito">
-
-                </div>
+                <Tela_03/>
                 <div className="cantoMeioDireito">
 
                 </div>
