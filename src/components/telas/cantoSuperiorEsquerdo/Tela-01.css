@@ -50,7 +50,7 @@
     height: 300px;
     background-image: url("../../../imagens/05/plantinha.png");
     background-size: cover;
-    transform: translate(-50px,-250px) rotate(10deg);
+    transform: translate(-900px,160px) rotate(10deg);
     position: relative;
     z-index: 1;
     
@@ -98,6 +98,8 @@
     width:492px;
     height:400px;
     grid-area: d;
+    transform: translate(39px,10px) rotate(2deg);
+    
 }
 .imagemTexto{
     background-image: url("../../../imagens/05/FRASE.png");
@@ -113,6 +115,29 @@
     width: 400px;
     height: 394px;
     grid-area:t;
+    z-index: 1;
+}
+.adesivo01{
+    display: flex;
+    background-image: url("../../../imagens/05/FITA.png");
+    background-size: cover;
+    width: 148px;
+    height: 47px;
+    transform: translate(-13px,12px) rotate(335deg);
+}
+.adesivo02{
+    display: flex;
+    background-image: url("../../../imagens/05/FITA.png");
+    background-size: cover;
+    width: 100px;
+    height: 33px;
+    transform: translate(-40px,80px) rotate(37deg);
+}
+.tamiSeta{
+    background-image: url("../../../imagens/05/RABISCO\ -\ SETA\ -\ TAMIS.png");
+    width:auto;
+    height: 100px;
+    background-color: black;
 }
 .tamisNome{
     display:flex;
