@@ -134,10 +134,12 @@
     transform: translate(-40px,80px) rotate(37deg);
 }
 .tamiSeta{
-    background-image: url("../../../imagens/05/RABISCO\ -\ SETA\ -\ TAMIS.png");
-    width:auto;
-    height: 100px;
-    background-color: black;
+    background-image: url("../../../imagens/05/tami-rabisco.png");
+    background-size:cover;
+    width:228px;
+    height: 67px;
+   transform: translate(300px,3h0px);
+    
 }
 .tamisNome{
     display:flex;
