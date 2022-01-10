@@ -7,43 +7,59 @@
     
     
 }
+.fraseTv{
+    text-transform: uppercase;
+    border:2px solid black ;
+    width: 310px;
+    height: min-content;
+    letter-spacing: 3px;
+    font-weight :650;
+}
+.filhaTv{
+    color:#F6BF87;
+    box-shadow: 0px 0px 10px black;
+}
+.fraseFilha{
+   color:#D692ED;
+}
 .plantaVerdeTv{
     background-image: url("../../../imagens/04/Plantinhas_verde.png");
     background-size: cover;
-    width: 186px;
-    height:257px;
+    width: 144px;
+    height:200px;
     grid-area: planta01;
-    transform: translate(102px,200px)
+    transform: translate(90px,150px)
 }
 .plantaRosaTv{
     background-image: url("../../../imagens/04/Plantinha_roxa.png");
     background-size: cover;
-    width: 157px;
-    height:257px;
+    width: 122px;
+    height:200px;
     grid-area: planta02;
-    transform: translate(-65px,80px);
+    transform: translate(-60px,45px);
 }
 .televisor{
     background-image: url("../../../imagens/04/tv.png");
     background-size: cover;
-    width: 900px;
-    height:535px;
+    width: 700px;
+    height:415px;
     grid-area: tv;
     display: flex;
+    flex-direction: column;
 }
 .botaoPlay{
     background-image: url("../../../imagens/04/botão\ play.png");
     background-size: cover;
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     align-self: center;
-    transform: translate(265px,-10px)
+    transform: translate(200px,-10px)
 }
 .cursor{
     background-image: url("../../../imagens/04/CURSOR\ -\ TV.png");
     background-size: cover;
-    width: 70px;
-    height: 80px;
+    width: 42px;
+    height: 50px;
     align-self: center;
-    transform: translate(170px,30px)
+    transform: translate(130px,20px)
 }
