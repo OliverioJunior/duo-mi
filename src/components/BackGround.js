@@ -19,7 +19,7 @@ function BackGround() {
         ev.preventDefault();
         console.log(ev)
       }
-     window.addEventListener('touchmove', process_touchmove, false)
+     /* window.addEventListener('touchmove', process_touchmove, false) */
      
 
     const showButton = () => {

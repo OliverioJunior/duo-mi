@@ -3,9 +3,9 @@ import "./Tela-01.css"
 
 const Tela_01 = () => {
 
-    window.onload = () => {
-
-    }
+    window.addEventListener = ("resize", (e)=> {
+        console.log(window.screen)
+    })
 
 
 
@@ -14,7 +14,9 @@ const Tela_01 = () => {
     return (
 
         <div className='cantoSuperiorEsquerdo grid'>
-
+            <div className = " Estatico">
+                
+            
                 <div className="plantinha" />
             <div className="Emily">
                 <div className="adesivo" />
@@ -42,6 +44,7 @@ const Tela_01 = () => {
                 <div className='tamisI' />
                 <div className='tamisS' />
             </div> 
+        </div>
         </div>
     )
 }

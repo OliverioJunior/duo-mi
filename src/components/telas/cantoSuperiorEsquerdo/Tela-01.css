@@ -19,7 +19,7 @@
     grid-area: emily;
     cursor:pointer;
     transform: translate(-50px,50px);
-    position: relative;
+    position: absolute;
     z-index: 6;
 }
 .adesivo{
