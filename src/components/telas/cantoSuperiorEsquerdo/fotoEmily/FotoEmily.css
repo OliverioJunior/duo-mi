@@ -1,0 +1,44 @@
+.Emily{
+    width: 400px;
+    height: 410px;
+    background-image: url("../../../../imagens/05/FRAME_EMILY_FRENTE.png");
+    background-size: cover;
+    grid-area: emily;
+    cursor:pointer;
+    transform: translate(-50px,50px);
+    position: relative;
+    z-index: 6;
+}
+.adesivo{
+    display: flex;
+    background-image: url("../../../../imagens/05/FITA.png");
+    background-size: cover;
+    width: 200px;
+    height: 55px;
+    transform: translate(70px) rotate(354deg);
+}
+.balao{
+    width:100px;
+    height:72px;
+    background-image: url("../../../../imagens/05/rabisco_balao.png");
+    background-size: cover;
+    transform: translate(-20px, 50px) rotate(350deg);
+
+}
+.seta_curva{
+    width:140px;
+    height: 73px;
+    background-image: url("../../../../imagens/05/seta_curva.png");
+    background-size: cover;
+    transform: translate(350px,-80px);
+}
+.plantinha{
+    width:218px;
+    height: 300px;
+    background-image: url("../../../../imagens/05/plantinha.png");
+    background-size: cover;
+    transform: translate(-1170px,250px);
+    position: relative;
+    z-index: 0;
+    
+}

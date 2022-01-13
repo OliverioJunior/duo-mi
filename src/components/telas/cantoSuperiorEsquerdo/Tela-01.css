@@ -1,8 +1,13 @@
 .cantoSuperiorEsquerdo{
     width:100vw;
     height: 100vh;
-    display: grid;
     grid-area: tela01;
+}
+.Estatico{
+    width: 1000px;
+    height:1000px;
+    display: grid;
+    transform: translate(250px,100px);
 }
 .grid{
    grid-template-areas: 
@@ -11,50 +16,7 @@
    "d t tn";
    grid-template-columns: 1fr 1fr 1fr;
 }
-.Emily{
-    width: 400px;
-    height: 410px;
-    background-image: url("../../../imagens/05/FRAME_EMILY_FRENTE.png");
-    background-size: cover;
-    grid-area: emily;
-    cursor:pointer;
-    transform: translate(-50px,50px);
-    position: absolute;
-    z-index: 6;
-}
-.adesivo{
-    display: flex;
-    background-image: url("../../../imagens/05/FITA.png");
-    background-size: cover;
-    width: 264px;
-    height: 100px;
-    transform: translate(53px) rotate(354deg);
-}
-.balao{
-    width:140px;
-    height:101px;
-    background-image: url("../../../imagens/05/rabisco_balao.png");
-    background-size: cover;
-    transform: translate(0px, 50px) rotate(350deg);
 
-}
-.seta_curva{
-    width:140px;
-    height: 73px;
-    background-image: url("../../../imagens/05/seta_curva.png");
-    background-size: cover;
-    transform: translate(350px,-80px);
-}
-.plantinha{
-    width:218px;
-    height: 300px;
-    background-image: url("../../../imagens/05/plantinha.png");
-    background-size: cover;
-    transform: translate(-900px,160px) rotate(10deg);
-    position: relative;
-    z-index: 1;
-    
-}
 .emilyNome{
     display: flex;
     justify-content: space-around;
@@ -138,7 +100,7 @@
     background-size:cover;
     width:228px;
     height: 67px;
-   transform: translate(300px,3h0px);
+   transform: translate(300px,30px);
     
 }
 .tamisNome{

@@ -15,6 +15,7 @@
     height: 300px;
     justify-content: center;
     display: flex;
+    transform: translate(0,-80px);
 }
 .navBarra{
     width: 100vw;
