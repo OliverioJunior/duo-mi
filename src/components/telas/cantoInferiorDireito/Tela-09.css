@@ -1,12 +1,17 @@
 .cantoInferiorDireito{
     width:100vw;
     height:100vh;
-    display: grid;
-    grid-area:tela09;
-    grid-template-areas: "planta01 tv planta02";
+    
     
     
 }
+.tvSemColapsar{
+    width:1000px;
+    height: 1000px;
+    display: grid;
+    grid-area:tela09;
+    grid-template-areas: "planta01 tv planta02";
+ }
 .fraseTv{
     text-transform: uppercase;
     border:2px solid black ;
@@ -28,7 +33,7 @@
     width: 144px;
     height:200px;
     grid-area: planta01;
-    transform: translate(90px,150px)
+    transform: translate(60px,150px)
 }
 .plantaRosaTv{
     background-image: url("../../../imagens/04/Plantinha_roxa.png");
@@ -36,7 +41,7 @@
     width: 122px;
     height:200px;
     grid-area: planta02;
-    transform: translate(-60px,45px);
+    transform: translate(-30px,55px);
 }
 .televisor{
     background-image: url("../../../imagens/04/tv.png");
@@ -53,7 +58,7 @@
     width: 180px;
     height: 180px;
     align-self: center;
-    transform: translate(200px,-10px)
+    transform: translate(-65px,50px)
 }
 .cursor{
     background-image: url("../../../imagens/04/CURSOR\ -\ TV.png");
@@ -61,5 +66,5 @@
     width: 42px;
     height: 50px;
     align-self: center;
-    transform: translate(130px,20px)
+    transform: translate(-30px,-30px)
 }

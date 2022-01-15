@@ -6,7 +6,7 @@
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .fotoPrincipal{
     background-image: url("../../../imagens/02/FOTO-DUOMI.png");
