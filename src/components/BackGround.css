@@ -8,7 +8,7 @@
 body {
     width:300vw;
     height:300vh;
-    
+    cursor:grab;
 } 
 .back-ground{
     width: 300vw;
@@ -16,6 +16,7 @@ body {
     background-image: url('../imagens/01/FUNDO-COMPLETO.png');
     background-size: 300vw 300vh;
     background-repeat: no-repeat;
+    
 }
  
 .back-ground{

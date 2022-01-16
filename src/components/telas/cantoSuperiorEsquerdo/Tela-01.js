@@ -4,11 +4,11 @@ import "./Tela-01.css"
 
 const Tela_01 = () => {
 
-    window.addEventListener = ("resize", (e) => {
+    /* window.addEventListener = ("resize", (e) => {
         console.log(window.screen)
     })
 
-
+ */
 
 
 

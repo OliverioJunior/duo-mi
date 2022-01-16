@@ -14,12 +14,28 @@ function BackGround() {
     const [button, setButton] = useState(true);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    function process_touchmove(ev) {
-        // Set call preventDefault()
-        ev.preventDefault();
-        console.log(ev)
-      }
-     /* window.addEventListener('touchmove', process_touchmove, false) */
+    let intervalId = 0
+    window.addEventListener('mousedown', function(e){
+         intervalId = setInterval(hold,5) 
+        function hold(){
+            setClick(true)
+            if(setClick){
+                window.scrollTo(e.clientX , e.clientY)
+                console.log(e.clientY)
+            }
+        }
+        
+    }) 
+    window.addEventListener('mouseup', release)
+    
+   function release(){
+        if(intervalId != 0){
+            clearInterval(intervalId)
+            intervalId = 0;
+            setClick(false)
+            console.log("Soltou!")
+        }
+    }
      
 
     const showButton = () => {
