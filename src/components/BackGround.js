@@ -15,13 +15,19 @@ function BackGround() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
     let intervalId = 0
-    window.addEventListener('mousedown', function(e){
+    window.addEventListener('click', function(e){
          intervalId = setInterval(hold,5) 
         function hold(){
             setClick(true)
             if(setClick){
-                window.scrollTo(e.clientX , e.clientY)
-                console.log(e.clientY)
+                let posicaoX = e.clientX
+                let posicaoY = e.clientY
+                let novaPosicaoX = posicaoX - e.clientX
+                let novaPosicaoY = posicaoY - e.clientY
+                window.scroll((e)=>{
+                    console.log(e)
+                })
+               
             }
         }
         
@@ -33,7 +39,6 @@ function BackGround() {
             clearInterval(intervalId)
             intervalId = 0;
             setClick(false)
-            console.log("Soltou!")
         }
     }
      
