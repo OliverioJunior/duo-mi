@@ -14,34 +14,51 @@ function BackGround() {
     const [button, setButton] = useState(true);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    let intervalId = 0
-    window.addEventListener('click', function(e){
-         intervalId = setInterval(hold,5) 
-        function hold(){
-            setClick(true)
-            if(setClick){
-                let posicaoX = e.clientX
-                let posicaoY = e.clientY
-                let novaPosicaoX = posicaoX - e.clientX
-                let novaPosicaoY = posicaoY - e.clientY
-                window.scroll((e)=>{
-                    console.log(e)
-                })
-               
-            }
-        }
-        
-    }) 
-    window.addEventListener('mouseup', release)
     
-   function release(){
-        if(intervalId != 0){
-            clearInterval(intervalId)
-            intervalId = 0;
-            setClick(false)
-        }
+    const mouse = {
+        ativo: false,
+        movendo: false,
+        pos: {x:0, 
+              y:0},
+        posAnterior: {x:0, 
+            y:0},
     }
-     
+
+    
+    window.addEventListener("mousedown", (e) => {mouse.ativo = true
+    mouse.posAnterior.x = e.clientX
+    mouse.posAnterior.y = e.clientY
+    })
+    window.addEventListener("mouseup", () => mouse.ativo = false)
+    window.addEventListener("mousemove", (e)=>{
+        mouse.pos.x = mouse.posAnterior.x - e.clientX;
+        mouse.pos.y = mouse.posAnterior.y - e.clientY;
+        mouse.movendo = true;
+        console.log(mouse.pos.x)
+    })
+    const moverTela = ()=>{
+        window.scrollTo({
+            top: mouse.pos.x,
+            left: mouse.pos.y,
+            behavior: "smooth"
+        })
+    }
+    const ciclo = ()=>{
+        if(mouse.ativo && mouse.movendo && mouse.posAnterior){
+            moverTela({pos:mouse.pos, posAnterior:mouse.posAnterior})
+            mouse.movendo = false;
+        }
+        mouse.posAnterior = {x: mouse.pos.x, y: mouse.pos.y}
+        setTimeout(ciclo, 10);
+    }
+    window.addEventListener("mousedown", ciclo())
+
+
+
+
+
+
+
 
     const showButton = () => {
         if (window.innerWidth <= 960) {

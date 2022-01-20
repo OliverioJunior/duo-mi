@@ -21,6 +21,7 @@ function Navbar() {
 
     return (
         <> 
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'></link>
         <nav className='navbar'>
             <div className='navbar-container'>
                

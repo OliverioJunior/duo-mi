@@ -16,7 +16,7 @@ body {
     background-image: url('../imagens/01/FUNDO-COMPLETO.png');
     background-size: 300vw 300vh;
     background-repeat: no-repeat;
-    
+    pointer-events: touch;
 }
  
 .back-ground{

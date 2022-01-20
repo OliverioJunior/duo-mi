@@ -9,10 +9,10 @@
     align-items: center;
 }
 .fotoPrincipal{
-    background-image: url("../../../imagens/02/FOTO-DUOMI.png");
+    background-image: url("../../../imagens/02/DuoMi.png");
     background-size: cover;
     width: 300px;
-    height: 300px;
+    height: 320px;
     justify-content: center;
     display: flex;
     transform: translate(0,-80px);
