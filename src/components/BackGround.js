@@ -26,17 +26,37 @@ function BackGround() {
 
     
     window.addEventListener("mousedown", (e) => {mouse.ativo = true
-    mouse.posAnterior.x = e.clientX
-    mouse.posAnterior.y = e.clientY
+        if(mouse.ativo){
+            mouse.posAnterior.x = e.clientX
+            mouse.posAnterior.y = e.clientY
+        }
+        let button = e
+        console.log(button)
     })
-    window.addEventListener("mouseup", () => mouse.ativo = false)
+    window.addEventListener("mouseup", (e) => {mouse.ativo = false 
+        mouse.movendo = false
+        
+        })
     window.addEventListener("mousemove", (e)=>{
-        mouse.pos.x = mouse.posAnterior.x - e.clientX;
-        mouse.pos.y = mouse.posAnterior.y - e.clientY;
-        mouse.movendo = true;
-        console.log(mouse.pos.x)
+        
+        if(mouse.ativo){
+            mouse.movendo = true
+        }
+        if(mouse.ativo && mouse.movendo){
+            mouse.pos.x += mouse.posAnterior.x - e.clientX;
+            mouse.pos.y += mouse.posAnterior.y - e.clientY;
+        }
+         
     })
-    const moverTela = ()=>{
+
+    window.addEventListener('mousemove', ()=>{
+        if(mouse.ativo && mouse.movendo == true){
+            window.moveTo(1500, 1500)
+           
+        }
+        
+    })
+  /*   const moverTela = ()=>{
         window.scrollTo({
             top: mouse.pos.x,
             left: mouse.pos.y,
@@ -52,7 +72,7 @@ function BackGround() {
         setTimeout(ciclo, 10);
     }
     window.addEventListener("mousedown", ciclo())
-
+ */
 
 
 
