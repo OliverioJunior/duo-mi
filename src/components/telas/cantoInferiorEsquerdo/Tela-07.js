@@ -1,12 +1,13 @@
 import React from "react";
 import "./Tela-07.css"
 
-const Tela_04 = () => {
+function Tela_07 (props){
+
     return(
         <div className = "cantoInferiorEsquerdo">
-                    <div className = 'desenhoArea'>
+                    <canvas className = 'desenhoArea' >
                         
-                    </div>
+                    </canvas>
                     <div className = 'selecionarCores'>
                         <button className='vermelho'>
 
@@ -31,4 +32,4 @@ const Tela_04 = () => {
     )
 }
 
-export default Tela_04
+export default Tela_07;

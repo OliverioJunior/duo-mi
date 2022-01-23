@@ -8,6 +8,15 @@
     transform: translate(-50px,50px);
     position: relative;
     z-index: 6;
+    transition-duration: 2s;
+    
+}
+.fundo{
+    width: 400px;
+    height: 380px;
+    position:absolute;
+    background-color: #4D0C5C;
+   
 }
 .adesivo{
     display: flex;
@@ -41,4 +50,5 @@
     position: relative;
     z-index: 0;
     
-}
+} 
+

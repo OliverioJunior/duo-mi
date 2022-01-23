@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button.js';
-import Tela_01 from './telas/cantoSuperiorEsquerdo/Tela-01.js';
-import Tela_07 from './telas/cantoInferiorEsquerdo/Tela-07.js';
-import Tela_05 from './telas/meio/Tela-05.js';
-import Tela_03 from './telas/cantoSuperiorDireito/Tela-03.js';
 import './BackGround.css'
-import Tela_09 from './telas/cantoInferiorDireito/Tela-09.js';
+import {Tela_01 , Tela_03 , Tela_05, Tela_07, Tela_09} from './telas/index.js';
 
 
 function BackGround() {
@@ -14,7 +10,7 @@ function BackGround() {
     const [button, setButton] = useState(true);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-   
+    const body = document.querySelector("body")
     const mouse = {
         ativo: false,
         movendo: false,
@@ -28,17 +24,17 @@ function BackGround() {
     }
 
 
-    
+
     window.addEventListener("mousedown", (e) => {
-        
+       
         mouse.ativo = true
         mouse.movendo = true
         mouse.posClick.x = e.clientX
         mouse.posClick.y = e.clientY
-        console.log(e)
-       
+        body.style.cursor = "grabbing"
     })
     window.addEventListener("mousemove", (e)=>{
+        e.preventDefault()
         if(mouse.ativo && mouse.movendo){
             
             mouse.posAnterior.x = mouse.posClick.x - e.clientX;
@@ -59,55 +55,58 @@ function BackGround() {
            }
        } 
 
-       window.addEventListener("mouseup", (e) => {
+       window.addEventListener("mouseup", () => {
         mouse.ativo = false;
         mouse.movendo = false;
-        mouse.savePosicao.x += mouse.posAnterior.x*(-1)
-        mouse.savePosicao.y += mouse.posAnterior.y*(-1)
+        mouse.savePosicao.x +=  mouse.posAnterior.x*(-1);
+        mouse.savePosicao.y +=  mouse.posAnterior.y*(-1);
+        body.style.cursor = "grab";
       }) 
 
-     /* window.addEventListener("mousemove", function ciclo(e){
-        
-        if(mouse.ativo){
-            mouse.movendo = true
+   /*  const canvasRef = useRef(null) 
+    const contextRef = useRef(null) 
+    const [isDrawing, setIsDrawing] = useState(false)
+    useEffect(() => {
+    const canvas = canvasRef.current;
+   
+    const context = canvas.getContext('2d');
+    context.scale(2,2);
+    context.lineCap = "round";
+    context.strokeStyle = "red";
+    context.lineWidth = 1;
+    contextRef.current = context;
+    }, [])
+    const startDrawing = (e) =>{
+        setIsDrawing(true);
+        const {clientX,clientY} = e;
+        contextRef.current.beginPath();
+        contextRef.current.moveTo(clientX,clientY);
+        console.log(canvasRef.current)
+    }
+    const finishDrawing = () =>{
+        contextRef.current.closePath()
+        setIsDrawing(false)
+    }
+    const draw = (e) =>{
+        const {clientX,clientY} = e;
+       if(isDrawing){ 
+           contextRef.current.lineTo(clientX,clientY)
+           contextRef.current.stroke()
         }
-        if(mouse.ativo && mouse.movendo){
-            mouse.posAnterior.x = mouse.posClick.x - e.clientX;
-            mouse.posAnterior.y = mouse.posClick.y - e.clientY;
-            mouse.moveu.y = e.clientY;
-            mouse.moveu.x = e.clientX;
-            console.log(mouse.posAnterior.x)
-        }
-        
-    }) 
-    let mover = 0
-     window.addEventListener('mousemove', ()=>{
-        mover = setTimeout(()=>{
-            if(mouse.ativo && mouse.movendo){
-                mouse.pos.x = mouse.posAnterior.x - mouse.moveu.x
-                mouse.pos.y = mouse.posAnterior.y - mouse.moveu.y
-                console.log(mouse.pos.x)
-                window.scrollTo({top:mouse.pos.y, left:mouse.pos.x, behavior: "smooth"})
-            } else {
-                return
-            }
-            
-        },10)   
-    }) 
-  
- */
+    } */
 
-
-
-
-
+     
     const showButton = () => {
         if (window.innerWidth <= 960) {
             setButton(false)
         } else {
             setButton(true)
         }
-        
+        if(mouse.ativo){
+            setClick(true)
+        } else {
+            setClick(false)
+        }
     };
 
     window.addEventListener('resize', showButton);
@@ -117,9 +116,12 @@ function BackGround() {
 
             <div className='back-ground'>
 
-                <Tela_01/>
+               <Tela_01/>
                 <div className="cantoMeioEsquerdo"/>
-                <Tela_07/>
+                <Tela_07  /* onMouseDown={startDrawing}
+                    onMouseUp={finishDrawing}
+                    onMouseMove={draw}
+                    ref = {canvasRef} *//>
                 <div className="meioSuperior">
                 </div>
 
