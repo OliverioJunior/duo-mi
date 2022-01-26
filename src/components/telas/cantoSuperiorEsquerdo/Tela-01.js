@@ -29,8 +29,6 @@ const Tela_01 = () => {
                     </div>
                 <div className='fotoDupla' />
                 <div className='tamis'>
-                    <div className="adesivo01" />
-                    <div className="adesivo02" />
                     <div className="tamiSeta" />
                 </div>
                 <div className='tamisNome'>
