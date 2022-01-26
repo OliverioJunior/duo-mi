@@ -24,7 +24,9 @@ const Tela_01 = () => {
                     <div className="emilyL" />
                     <div className="emilyY" />
                 </div>
-                <div className='imagemTexto' />
+                <div className='Texto' >
+                    <h1>Clique na <span>imagem</span> para conhecer essa <span>dupla</span></h1>
+                    </div>
                 <div className='fotoDupla' />
                 <div className='tamis'>
                     <div className="adesivo01" />

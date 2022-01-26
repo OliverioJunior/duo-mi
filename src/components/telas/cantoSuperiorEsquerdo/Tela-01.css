@@ -7,14 +7,17 @@
     width: 1000px;
     height:1000px;
     display: grid;
-    transform: translate(250px,100px);
+    
 }
 .grid{
    grid-template-areas: 
-   "emily emilyn ."
-   "e f f"
-   "d t tn";
-   grid-template-columns: 1fr 1fr 1fr;
+   "emily emily emily emily emily emilyn emilyn emilyn emilyn"
+   "emily emily emily emily emily emilyn emilyn emilyn emilyn"
+  /*  "d t tn . . . . . . ."
+   "e f f . . . . . . ."
+   "e f f . . . . . . ."
+   "d t tn . . . . . . ."; */;
+   grid-template-columns: repeat(9,calc(100%/9));
 }
 
 .emilyNome{
@@ -63,14 +66,20 @@
     transform: translate(39px,10px) rotate(2deg);
     
 }
-.imagemTexto{
-    background-image: url("../../../imagens/05/FRASE.png");
-    background-size: cover;
-    width: 400px;
-    height: 57px;
-    grid-area: f;
-   
+.Texto{
+     grid-area: f;
+     color: var(--primaria);
+     width: 350px;
+     text-align: center;
+     transform:translate(-280px,-100px);
+     font-size: 0.75em;
 }
+.Texto h1 span:first-child{
+    color: var(--secundaria);
+} 
+.Texto h1 span:last-child{
+    color: var(--terciaria);
+} 
 .tamis{
     background-image: url("../../../imagens/05//FRAME-TAMIS.png");
     background-size: cover;

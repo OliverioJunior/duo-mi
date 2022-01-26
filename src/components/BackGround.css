@@ -1,5 +1,8 @@
 :root{
     --dimensao: 50px;
+    --primaria: #4D0C5C;
+    --secundaria: #B01446;
+    --terciaria:#FFB113;
 }
 *{
     margin: 0;
