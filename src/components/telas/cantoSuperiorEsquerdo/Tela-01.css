@@ -11,18 +11,23 @@
 }
 .grid{
    grid-template-areas: 
-   "emily emily emily emilyn emilyn emilyn emilyn emilyn emilyn"
-   "emily emily emily texto texto texto texto texto texto"
-   "fotodupla fotodupla fotodupla tamis tamis tamis tamis tamis tamis"
-   "fotodupla fotodupla fotodupla tamis tamis tamis tamis tamis tamis "
+   "emily emily emily emilyn emilyn emilyn TamisNome TamisNome "
+   "emily emily emily texto texto texto TamisNome TamisNome "
+   "fotodupla fotodupla fotodupla tamis tamis tamis  TamisNome TamisNome "
+   "fotodupla fotodupla fotodupla tamis tamis tamis  TamisNome  TamisNome  "
+   "fotodupla fotodupla fotodupla tamis tamis tamis  TamisNome  TamisNome "
+   
+   
+   
    ;
-   grid-template-columns: repeat(9,calc(100%/9));
+   grid-template-columns: repeat(9,calc(100%/8));
 }
 
 .emilyNome{
     padding-top: 30px;
     display: flex;
     grid-area: emilyn;
+    transform: translate(-30px);
     
 }
 .emilyE{
@@ -38,6 +43,7 @@
     height: 85px;
     width:90px;
     cursor:pointer;
+    margin-left:10px;
 }
 .emilyI{
     background-image: url("../../../imagens/05/I-EMILY.png");
@@ -45,6 +51,7 @@
     height: 85px;
     width:70px;
     cursor:pointer;
+    margin-left:10px;
 }
 .emilyL{
     background-image: url("../../../imagens/05/L-EMILY.png");
@@ -52,13 +59,15 @@
     height: 100px;
     width:74px;
     cursor:pointer;
+    margin-left:10px;
 }
 .emilyY{
     background-image: url("../../../imagens/05/Y-EMILY.png");
     background-size: cover;
     height: 100px;
     width:67px;
-     cursor:pointer;
+    cursor:pointer;
+    margin-left:10px;
 }
 .fotoDupla{
     background-image: url("../../../imagens/05/DUOMI.png");
@@ -67,15 +76,19 @@
     height:292px;
     grid-area: fotodupla;
     transform:  rotate(2deg);
+    align-self: flex-start;
+    transform: translate(0,-150px);
     
 }
 .Texto{
      grid-area: texto;
      color: var(--primaria);
-     width: 350px;
+     width: 430px;
      text-align: center;
-     /* transform:translate(-280px,-100px); */
-     font-size: 0.75em;
+     transform:translate(-60px,-80px); 
+     font-size: 0.90em;
+     text-transform: uppercase;
+
 }
 .Texto h1 span:first-child{
     color: var(--secundaria);
@@ -90,48 +103,56 @@
     height: 314px;
     grid-area:tamis;
     z-index: 1;
+    transform:translate(-35px,-160px);
 }
 
 .tamiSeta{
     background-image: url("../../../imagens/05/tami-rabisco.png");
     background-size:cover;
-    width:228px;
-    height: 67px;
-   transform: translate(300px,30px);
+    width:150px;
+    height: 44px;
+   transform: translate(220px,60px) rotate(05deg);
     
 }
 .tamisNome{
     display:flex;
     flex-direction: column;
     grid-area:TamisNome;
+    transform: translate(-10px,150px);
 }
 .tamisT{
     background-image: url("../../../imagens/05/T-TAMIS.png");
-    height: 148px;
-    width: 63px;
+    background-size: cover;
+    height: 80px;
+    width: 33px;
     cursor:pointer;
+    
 }
 .tamisA{
     background-image: url("../../../imagens/05/A-TAMIS.png");
-    height: 115px;
-    width: 111px;
+    background-size: cover;
+    height: 60px;
+    width: 57px;
     cursor:pointer;
 }
 .tamisM{
     background-image: url("../../../imagens/05/M-TAMIS.png");
-    height:     110px;
-    width: 97px;
+    background-size: cover;
+    height: 60px;
+    width: 50px;
     cursor:pointer;
 }
 .tamisI{
     background-image: url("../../../imagens/05/I-TAMIS.png");
-    height: 132px;
-    width: 67px;
-     cursor:pointer;
+    background-size: cover;
+    height: 70px;
+    width: 35px;
+    cursor:pointer;
 }
 .tamisS{
     background-image: url("../../../imagens/05/S-TAMIS.png");
-    height: 134px;
-    width: 94px;
+    background-size: cover;
+    height: 80px;
+    width: 55px;
     cursor:pointer;
 }
