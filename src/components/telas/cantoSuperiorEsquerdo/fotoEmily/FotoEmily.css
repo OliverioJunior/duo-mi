@@ -9,11 +9,11 @@
     position: relative;
     z-index: 6;
     transition-duration: 2s;
-    
+    transform-style: preserve-3d;
 }
 .fundo{
-    width: 300px;
-    height: 307px;
+    width: 290px;
+    height: 290px;
     position:absolute;
     background-color: #4d0c5c52;
     transition-duration: 2s;

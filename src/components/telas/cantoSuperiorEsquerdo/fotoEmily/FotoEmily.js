@@ -1,30 +1,24 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import "./FotoEmily.css"
 
 
 
 function FotoEmily() {
     const [click,setClick] = useState(false);
-     const virar = (e)=>{
+     const Virar = (e)=>{
         setClick(!click)
+    
+       console.log(document)
+        
     } 
-   /*  window.addEventListener('resize',(e)=>{
-        if(click){
-            e.target.style.transform = " scaleX(-1)"
-            e.target.parentElement.childNodes[2].style.background = " red" 
-           console.log(e.target.parentElement.childNodes[2])
-           console.log(console.log(click))
-        } else {
-            e.target.parentElement.childNodes[2].style.background = "#4D0C5C"
-            e.target.style.transform = " scaleX(1)"
-           
-        }
-    }) */
+      window.addEventListener('resize',(e)=>{
+        console.log(e.target)
+    }) 
     return (
         <>
             
                 <div className="Emily"
-                onClick={virar}>
+                onClick={Virar}>
                     <div className="adesivo" />
                     <div className="balao" />
                     <div className="seta_curva" />
