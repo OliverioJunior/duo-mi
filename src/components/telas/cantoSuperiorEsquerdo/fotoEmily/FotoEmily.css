@@ -1,3 +1,9 @@
+.girar{
+    position:relative;
+    width: 300px;
+    height: 300px;
+    z-index: 1000;
+}
 .Emily{
     width: min(300px, 700px);
     height: min(307px, 700px);
@@ -6,10 +12,11 @@
     grid-area: emily;
     cursor:pointer;
    /*  transform: translate(-50px,50px); */
-    position: relative;
+    position:absolute;
     z-index: 6;
     transition-duration: 2s;
     transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 .fundo{
     width: 290px;
@@ -17,6 +24,8 @@
     position:absolute;
     background-color: #4d0c5c52;
     transition-duration: 2s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 .balao{

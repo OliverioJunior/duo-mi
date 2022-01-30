@@ -8,7 +8,15 @@ function FotoEmily() {
      const Virar = (e)=>{
         setClick(!click)
     
-       console.log(document)
+      console.log(e.target)
+      /* if(!click){
+
+          e.target.style.transform = "rotateY(180deg)"
+         
+
+      } else {
+        e.target.style.transform = "rotateY(0deg)"
+      } */
         
     } 
       window.addEventListener('resize',(e)=>{
@@ -16,14 +24,15 @@ function FotoEmily() {
     }) 
     return (
         <>
-            
+                <div className='girar' onClick={Virar}>
                 <div className="Emily"
-                onClick={Virar}>
+                >
                     <div className="adesivo" />
                     <div className="balao" />
                     <div className="seta_curva" />
                 </div>
                 <div className='fundo'/>
+                </div>
         </>
     )
 }
