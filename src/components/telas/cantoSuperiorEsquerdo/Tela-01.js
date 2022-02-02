@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import FotoEmily from "./fotoEmily/FotoEmily";
+import FotoTamis from "./fotoTamis/FotoTamis";
 import "./Tela-01.css"
 
 const Tela_01 = () => {
 
-    /* window.addEventListener = ("resize", (e) => {
-        console.log(window.screen)
-    })
-
- */
-
+    
 
 
     return (
@@ -28,9 +24,7 @@ const Tela_01 = () => {
                     <h1>Clique na <span>imagem</span> para conhecer essa <span>dupla</span></h1>
                 </div>
                 <div className='fotoDupla' />
-                <div className='tamis'>
-                    <div className="tamiSeta" />
-                </div>
+                <FotoTamis/>
                 <div className='tamisNome'>
                     <div className='tamisT' />
                     <div className='tamisA' />

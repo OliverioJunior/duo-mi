@@ -5,6 +5,7 @@ import './BackGround.css'
 import {Tela_01 , Tela_03 , Tela_05, Tela_07, Tela_09} from './telas/index.js';
 
 
+
 function BackGround() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -22,42 +23,35 @@ function BackGround() {
         y:0},
         savePosicao:{x:0,y:0}
     }
-
+    function slideScreen(){
+        if(mouse.ativo){
+            mouse.pos.y = (mouse.savePosicao.y - mouse.posAnterior.y)*(-0.8)
+            mouse.pos.x = (mouse.savePosicao.x - mouse.posAnterior.x)*(-0.8)
+            window.scroll({top:mouse.pos.y, left:mouse.pos.x})
+         }
+     } 
 
 
     window.addEventListener("mousedown", (e) => {
-       
         mouse.ativo = true
-        mouse.movendo = true
         mouse.posClick.x = e.clientX
         mouse.posClick.y = e.clientY
         body.style.cursor = "grabbing"
     })
     window.addEventListener("mousemove", (e)=>{
         e.preventDefault()
-        if(mouse.ativo && mouse.movendo){
-            
+        if(mouse.ativo){
             mouse.posAnterior.x = mouse.posClick.x - e.clientX;
             mouse.posAnterior.y = mouse.posClick.y - e.clientY;
-            console.log(mouse.posAnterior.x)
-            setTimeout(mover(),300) 
+            setTimeout(slideScreen(),300) 
           }
       })
 
 
-        function mover(){
-          if(mouse.ativo && mouse.movendo){
-              mouse.pos.y = (mouse.savePosicao.y - mouse.posAnterior.y)*(-0.8)
-              mouse.pos.x = (mouse.savePosicao.x - mouse.posAnterior.x)*(-0.8)
-              window.scroll({top:mouse.pos.y, left:mouse.pos.x})
-           
-              
-           }
-       } 
+       
 
        window.addEventListener("mouseup", () => {
         mouse.ativo = false;
-        mouse.movendo = false;
         mouse.savePosicao.x +=  mouse.posAnterior.x*(-1);
         mouse.savePosicao.y +=  mouse.posAnterior.y*(-1);
         body.style.cursor = "grab";
@@ -144,4 +138,4 @@ function BackGround() {
     )
 }
 
-export default BackGround 
+export default BackGround;

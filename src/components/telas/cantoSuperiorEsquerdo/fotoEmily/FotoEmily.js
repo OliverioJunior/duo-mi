@@ -4,11 +4,11 @@ import "./FotoEmily.css"
 
 
 function FotoEmily() {
-    const [click,setClick] = useState(false);
+    const [click,setClick] = useState(true);
      const Virar = (e)=>{
         setClick(!click)
     
-      console.log(e.target)
+      
       /* if(!click){
 
           e.target.style.transform = "rotateY(180deg)"
@@ -24,14 +24,13 @@ function FotoEmily() {
     }) 
     return (
         <>
-                <div className='girar' onClick={Virar}>
-                <div className="Emily"
-                >
-                    <div className="adesivo" />
-                    <div className="balao" />
-                    <div className="seta_curva" />
-                </div>
-                <div className='fundo'/>
+                <div className={click ? "girar":"girando"} onClick={Virar}>
+                    <div className="Emily">
+                        <div className="adesivo" />
+                        <div className="balao" />
+                        <div className="seta_curva" />
+                    </div>
+                    <div className='fundo'/>
                 </div>
         </>
     )

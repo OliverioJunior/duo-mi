@@ -3,6 +3,18 @@
     width: 300px;
     height: 300px;
     z-index: 1000;
+    transform-style: preserve-3d;
+    transition-duration: 2s;
+
+}
+.girando{
+    position:relative;
+    width: 300px;
+    height: 300px;
+    z-index: 1000;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition-duration: 2s;
 }
 .Emily{
     width: min(300px, 700px);
@@ -26,6 +38,7 @@
     transition-duration: 2s;
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    transform: rotateY(180deg);
 }
 
 .balao{
