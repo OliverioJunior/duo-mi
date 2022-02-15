@@ -1,0 +1,12 @@
+
+.fotoDupla{
+    background-image: url("../../../../imagens/05/DUOMI.png");
+    background-size: cover;
+    width:360px;
+    height:292px;
+    grid-area: fotodupla;
+    
+    align-self: flex-start;
+   
+    
+}
