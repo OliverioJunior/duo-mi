@@ -11,24 +11,30 @@
 }
 .grid{
    grid-template-areas: 
-   "emily emily emilyn emilyn TamisNome TamisNome  "
-   "emily emily texto texto TamisNome TamisNome   "
-   "fotodupla fotodupla tamis tamis TamisNome TamisNome   "
-   "fotodupla fotodupla tamis tamis TamisNome TamisNome   "
-   "fotodupla fotodupla tamis tamis TamisNome TamisNome    "
-   
+   "emily emily emilyn emilyn emilyn"
+   "emily emily texto texto texto"
+   "fotodupla fotodupla tamis tamis tamis" 
+   "fotodupla fotodupla tamis tamis tamis " 
    
    
    ;
-   grid-template-columns: repeat(6,calc(100%/5));
-   grid-template-rows: repeat(4,calc(100%/4));
+   grid-template-columns: 150px 200px 150px 150px 150px;
+   grid-template-rows: 150px 150px 150px 150px 150px;
 }
 
+
+
+.Texto h1 span:first-child{
+    color: var(--secundaria);
+} 
+.Texto h1 span:last-child{
+    color: var(--terciaria);
+}  
 .emilyNome{
     padding-top: 30px;
     display: flex;
     grid-area: emilyn;
-    transform: translate(-55px);
+    /* transform: translate(-55px); */
     
 }
 .emilyE{
@@ -70,31 +76,18 @@
     cursor:pointer;
     margin-left:10px;
 }
-.fotoDupla{
-    background-image: url("../../../imagens/05/DUOMI.png");
-    background-size: cover;
-    width:360px;
-    height:292px;
-    grid-area: fotodupla;
-    transform:  rotate(2deg);
-    align-self: flex-start;
-    transform: translate(0,-220px);
-    
-}
 .Texto{
-     grid-area: texto;
-     color: var(--primaria);
-     width: 430px;
-     text-align: center;
-     transform:translate(-80px,-80px); 
-     font-size: 0.7em;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-
+    grid-area: texto;
+    color: var(--primaria);
+    width: 430px;
+    text-align: center;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-self: flex-end;
 }
-.Texto h1 span:first-child{
-    color: var(--secundaria);
-} 
-.Texto h1 span:last-child{
-    color: var(--terciaria);
-} 
+
+.Texto > h1{
+    align-content: end;
+}

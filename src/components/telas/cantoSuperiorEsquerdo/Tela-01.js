@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FotoDupla from "./fotoDupla/FotoDupla";
 import FotoEmily from "./fotoEmily/FotoEmily";
 import FotoTamis from "./fotoTamis/FotoTamis";
 import "./Tela-01.css"
@@ -23,7 +24,7 @@ const Tela_01 = () => {
                 <div className='Texto' >
                     <h1>Clique na <span>imagem</span> para conhecer essa <span>dupla</span></h1>
                 </div>
-                <div className='fotoDupla' />
+                <FotoDupla/>
                 <FotoTamis/>
                 <div className='tamisNome'>
                     <div className='tamisT' />
