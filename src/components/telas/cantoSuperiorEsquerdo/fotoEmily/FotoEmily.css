@@ -17,28 +17,30 @@
     transition-duration: 2s;
 }
 .Emily{
-    width: min(300px, 700px);
-    height: min(307px, 700px);
+    width: 260px;
+    height: 267px;
     background-image: url("../../../../imagens/05/FRAME_EMILY_FRENTE.png");
     background-size: cover;
     grid-area: emily;
     cursor:pointer;
-    transform: translate(-50px,50px);
     position:absolute;
     z-index: 6;
     transition-duration: 2s;
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    transform: rotate(-6deg);
+    margin-left: 50px;
 }
 .fundo{
-    width: 290px;
-    height: 290px;
+    width: 260px;
+    height: 267px;
     position:absolute;
     background-color: #4d0c5c52;
     transition-duration: 2s;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transform: rotateY(180deg);
+    transform: rotate(-6deg);
 }
 
 .balao{
@@ -54,7 +56,7 @@
     height: 51px;
     background-image: url("../../../../imagens/05/seta_curva.png");
     background-size: cover;
-    transform: translate(150px,25px);
+    transform: translate(220px,0px);
     
 } 
  
@@ -66,11 +68,8 @@
     grid-area: emily;
     cursor:pointer;
     position:absolute;
-    z-index: 6;
     transition-duration: 2s;
     backface-visibility: hidden;
     transform: rotate(-6deg);
-    display: flex;
-    align-self: center;
-    justify-self: center;
+    margin-left: 50px;
 }
