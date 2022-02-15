@@ -23,9 +23,11 @@ function FotoDupla() {
         console.log(e.target)
     }) 
     return (
-        <>
-           <div className='fotoDupla' />
-        </>
+        
+            <div className='fotoDupla'>
+             <div className= 'fotoDuplaCursor'/>
+            </div>           
+        
     )
 }
 

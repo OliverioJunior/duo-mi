@@ -2,11 +2,21 @@
 .fotoDupla{
     background-image: url("../../../../imagens/05/DUOMI.png");
     background-size: cover;
-    width:360px;
-    height:292px;
+    width:300px;
+    height:243px;
     grid-area: fotodupla;
-    
+    transform:rotate(-6deg) translate(0px, -20px);
     align-self: flex-start;
-   
-    
+    margin-left:50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.fotoDuplaCursor{
+    background-size: cover;
+    background-image: url(../../../../imagens/05/CURSOR-QUEM\ SOMOS.png);
+    width:50px;
+    height: 59px;
+    margin-right: 17px;
+    transform: translate(0, 30px) rotate(6deg);
 }
