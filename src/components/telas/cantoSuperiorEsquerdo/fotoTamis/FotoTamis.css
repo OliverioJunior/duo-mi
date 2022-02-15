@@ -1,19 +1,15 @@
-.tamisFrente{
-    background-size: cover;
+/* .tamisFrente{
     width: 320px;
     height: 314px;
     grid-area:tamis;
-    z-index: 1;
     transform:translate(-35px,-240px);
     position:relative;
-}
-.tamisFundo{
-    background-size: cover;
-    width: 320px;
-    height: 314px;
-    grid-area:tamis;
-    z-index: 1;
-    transform:translate(-35px,-240px);
+    transform-style: preserve-3d;
+    transition-duration: 2s;
+    position: relative;
+    display: flex;
+    background:black;
+    z-index:1000;
 }
 .tamis{
     background-image: url("../../../../imagens/05//FRAME-TAMIS.png");
@@ -21,15 +17,20 @@
     width: 320px;
     height: 314px;
     grid-area:tamis;
-    z-index: 1;
+    z-index: 0;
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 .tamisDescricao{
-    background:black;
-    background-size: cover;
-    width: 320px;
-    height: 314px;
-    grid-area:tamis;
+    width: 290px;
+    height: 290px;
     position:absolute;
+    background-color: #4d0c5c52;
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    z-index:0;
 }
 
 .tamiSeta{
@@ -37,7 +38,7 @@
     background-size:cover;
     width:150px;
     height: 44px;
-   transform: translate(220px,60px) rotate(05deg);
+    transform: translate(220px,60px) rotate(05deg);
     
 }
 .tamisNome{
@@ -82,4 +83,11 @@
     height: 80px;
     width: 55px;
     cursor:pointer;
+}
+ */
+.tamisFrente{
+    background:black;
+    width:290px;
+    height:290px;
+    grid-area: tamis;
 }

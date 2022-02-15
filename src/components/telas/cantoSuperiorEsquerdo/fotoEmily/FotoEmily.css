@@ -1,4 +1,4 @@
-.girar{
+ .girar{
     position:relative;
     width: 300px;
     height: 300px;
@@ -23,7 +23,7 @@
     background-size: cover;
     grid-area: emily;
     cursor:pointer;
-   /*  transform: translate(-50px,50px);*/
+    transform: translate(-50px,50px);
     position:absolute;
     z-index: 6;
     transition-duration: 2s;
@@ -54,7 +54,23 @@
     height: 51px;
     background-image: url("../../../../imagens/05/seta_curva.png");
     background-size: cover;
-    transform: translate(250px,0px);
+    transform: translate(150px,25px);
     
+} 
+ 
+.Emily{
+    width: 260px;
+    height: 267px;
+    background-image: url("../../../../imagens/05/FRAME_EMILY_FRENTE.png");
+    background-size: cover;
+    grid-area: emily;
+    cursor:pointer;
+    position:absolute;
+    z-index: 6;
+    transition-duration: 2s;
+    backface-visibility: hidden;
+    transform: rotate(-6deg);
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
-
