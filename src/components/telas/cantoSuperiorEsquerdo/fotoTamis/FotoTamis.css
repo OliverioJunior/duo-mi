@@ -1,8 +1,7 @@
-/* .tamisFrente{
-    width: 320px;
-    height: 314px;
+.tamisFrente{
+    width: 300px;
+    height: 296px;
     grid-area:tamis;
-    transform:translate(-35px,-240px);
     position:relative;
     transform-style: preserve-3d;
     transition-duration: 2s;
@@ -10,14 +9,16 @@
     display: flex;
     background:black;
     z-index:1000;
+    transform:rotate(-2deg);
 }
 .tamis{
     background-image: url("../../../../imagens/05//FRAME-TAMIS.png");
     background-size: cover;
-    width: 320px;
-    height: 314px;
+    width: 300px;
+    height: 296px;
     grid-area:tamis;
-    z-index: 0;
+   
+    z-index: 1;
     transition-duration: 2s;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -84,10 +85,11 @@
     width: 55px;
     cursor:pointer;
 }
- */
+
 .tamisFrente{
     background:black;
     width:290px;
     height:290px;
     grid-area: tamis;
+    margin-left: 30px;
 }

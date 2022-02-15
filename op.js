@@ -4,5 +4,5 @@ function regra3(a,b,c){
    return b*c/a
 }
 
-console.log(regra3(72,37,100))
+console.log(regra3(97,115,50))
   
