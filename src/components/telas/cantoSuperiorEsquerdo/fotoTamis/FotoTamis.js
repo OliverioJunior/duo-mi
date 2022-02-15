@@ -3,11 +3,16 @@ import "./FotoTamis.css";
 
 function FotoTamis() {
     const [click,setClick] = useState(true);
-    const girar = () => {
+    const girar = (e) => {
         setClick(!click)
+        if(!click){
+            e.target.style.transform = "rotateY(180deg)"
+        } else {
+            e.target.style.transform = "rotateY(0deg)"
+        }
     }
   return (
-    <div className = {click ? "tamisFrente" : "tamisFundo"}
+    <div className = "tamisFrente"
     onClick={girar}>
         <div className='tamis'>
             <div className="tamiSeta" />
