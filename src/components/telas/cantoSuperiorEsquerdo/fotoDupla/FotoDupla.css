@@ -14,6 +14,8 @@
     background-color: #4d0c5cf6;
     position:absolute;
     z-index: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
 .fotoDupla{
     position:absolute;
