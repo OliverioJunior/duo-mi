@@ -9,11 +9,16 @@
 .desenhoArea{
     width: 80vw;
     height: 80vh;
-    border: 2px solid black;
-    border-radius: 40px;
-    background: white;
-    margin: 0;
-
+    border-radius:50px; 
+    border:10px solid transparent; 
+    background:linear-gradient(90deg,var(--terciaria),var(--secundaria),var(--primaria)) border-box; /*3*/
+    -webkit-mask:
+       linear-gradient(#fff 0 0) padding-box, 
+       linear-gradient(#fff 0 0);
+       mask:border-box;
+    -webkit-mask-composite: xor; 
+            mask-composite: exclude; 
+  
 }
 
 .selecionarCores{
