@@ -7,26 +7,26 @@ function FotoDupla() {
     const [click,setClick] = useState(true);
      const Virar = (e)=>{
         setClick(!click)
-    
-      
-      /* if(!click){
-
-          e.target.style.transform = "rotateY(180deg)"
-         
-
-      } else {
-        e.target.style.transform = "rotateY(0deg)"
-      } */
+        let flip = document.querySelector(".containerDupla")
+        if(click){
+            flip.style.transform = "rotate(-6deg) translate(0px, -20px) rotateY(180deg)"
+        } else {
+            flip.style.transform = "rotate(-6deg) translate(0px, -20px) rotateY(0deg)"
+        }
         
     } 
       window.addEventListener('resize',(e)=>{
         console.log(e.target)
     }) 
     return (
-        
+
+            <div className='containerDupla' onClick={Virar}>
             <div className='fotoDupla'>
              <div className= 'fotoDuplaCursor'/>
             </div>           
+            <div className='fundoDupla'/>
+
+            </div>
         
     )
 }

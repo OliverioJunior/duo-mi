@@ -1,16 +1,31 @@
-
+.containerDupla{
+    grid-area: fotodupla;
+    width:300px;
+    height:243px;
+    transform:rotate(-6deg) translate(0px, -20px);
+    align-self: flex-start;
+    margin-left:50px;
+    transform-style: preserve-3d;
+    transition-duration: 2s;
+}
+.fundoDupla{
+    width:300px;
+    height:243px;
+    background-color: #4d0c5cf6;
+    position:absolute;
+    z-index: 0;
+}
 .fotoDupla{
+    position:absolute;
     background-image: url("../../../../imagens/05/DUOMI.png");
     background-size: cover;
     width:300px;
     height:243px;
-    grid-area: fotodupla;
-    transform:rotate(-6deg) translate(0px, -20px);
-    align-self: flex-start;
-    margin-left:50px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    z-index: 1;
+    backface-visibility: hidden;
 }
 .fotoDuplaCursor{
     background-size: cover;
