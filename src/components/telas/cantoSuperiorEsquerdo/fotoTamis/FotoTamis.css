@@ -1,94 +1,88 @@
-.tamisFrente{
-    width: 300px;
-    height: 296px;
-    grid-area:tamis;
-    position:relative;
-    transform-style: preserve-3d;
-    transition-duration: 2s;
-    position: relative;
-    display: flex;
-    background:black;
-    z-index:1000;
-    transform:rotate(-2deg);
+.containerTamis {
+  width: 300px;
+  height: 296px;
+  grid-area: tamis;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 2s;
+  position: relative;
+  display: flex;
+  transform: rotate(-2deg);
+  margin-left: 40px;
 }
-.tamis{
-    background-image: url("../../../../imagens/05//FRAME-TAMIS.png");
-    background-size: cover;
-    width: 300px;
-    height: 296px;
-    grid-area:tamis;
-    z-index: 1;
-    transition-duration: 2s;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
+.tamis {
+  background-image: url("../../../../imagens/05//FRAME-TAMIS.png");
+  background-size: cover;
+  width: 300px;
+  height: 296px;
+  grid-area: tamis;
+  z-index: 1;
+  transition-duration: 2s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
-.tamisDescricao{
-    width: 290px;
-    height: 290px;
-    position:absolute;
-    background-color: #4d0c5c52;
-    transition-duration: 2s;
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    z-index:0;
-}
-
-.tamiSeta{
-    background-image: url("../../../../imagens/05/tami-rabisco.png");
-    background-size:cover;
-    width:150px;
-    height: 44px;
-    transform: translate(220px,60px) rotate(05deg);
-    
-}
-.tamisNome{
-    display:flex;
-    flex-direction: column;
-    grid-area:TamisNome;
-    transform: translate(-70px,200px);
-    
-}
-.tamisT{
-    background-image: url("../../../../imagens/05/T-TAMIS.png");
-    background-size: cover;
-    height: 80px;
-    width: 33px;
-    cursor:pointer;
-    
-}
-.tamisA{
-    background-image: url("../../../../imagens/05/A-TAMIS.png");
-    background-size: cover;
-    height: 60px;
-    width: 57px;
-    cursor:pointer;
-}
-.tamisM{
-    background-image: url("../../../../imagens/05/M-TAMIS.png");
-    background-size: cover;
-    height: 60px;
-    width: 50px;
-    cursor:pointer;
-}
-.tamisI{
-    background-image: url("../../../../imagens/05/I-TAMIS.png");
-    background-size: cover;
-    height: 70px;
-    width: 35px;
-    cursor:pointer;
-}
-.tamisS{
-    background-image: url("../../../../imagens/05/S-TAMIS.png");
-    background-size: cover;
-    height: 80px;
-    width: 55px;
-    cursor:pointer;
+.tamisDescricao {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  background-color: #4d0c5c52;
+  transition-duration: 2s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  z-index: 0;
 }
 
-.tamisFrente{
-    background:black;
-    width:290px;
-    height:290px;
-    grid-area: tamis;
-    margin-left: 30px;
+.tamiSeta {
+  background-image: url("../../../../imagens/05/tami-rabisco.png");
+  background-size: cover;
+  width: 150px;
+  height: 44px;
+  transform: translate(220px, 60px) rotate(05deg);
+}
+.tamisNome {
+  display: flex;
+  flex-direction: column;
+  grid-area: TamisNome;
+  margin-top: 50px;
+  transform: translate(-50px);
+}
+.tamisT {
+  background-image: url("../../../../imagens/05/T-TAMIS.png");
+  background-size: cover;
+  height: 80px;
+  width: 33px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.tamisA {
+  background-image: url("../../../../imagens/05/A-TAMIS.png");
+  background-size: cover;
+  height: 60px;
+  width: 57px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.tamisM {
+  background-image: url("../../../../imagens/05/M-TAMIS.png");
+  background-size: cover;
+  height: 60px;
+  width: 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.tamisI {
+  background-image: url("../../../../imagens/05/I-TAMIS.png");
+  background-size: cover;
+  height: 70px;
+  width: 35px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.tamisS {
+  background-image: url("../../../../imagens/05/S-TAMIS.png");
+  background-size: cover;
+  height: 80px;
+  width: 55px;
+  cursor: pointer;
 }
