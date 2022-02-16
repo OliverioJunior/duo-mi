@@ -26,13 +26,7 @@ const Tela_01 = () => {
                 </div>
                 <FotoDupla/>
                 <FotoTamis/>
-                <div className='tamisNome'>
-                    <div className='tamisT' />
-                    <div className='tamisA' />
-                    <div className='tamisM' />
-                    <div className='tamisI' />
-                    <div className='tamisS' />
-                </div>
+               
             </div>
         </div>
     )
