@@ -18,7 +18,7 @@ body {
     width: 300vw;
     height: 300vh;
     background-image: url('../imagens/01/FUNDO-COMPLETO.png');
-    background-size: 300vw 300vh;
+    background-size: cover;
     background-repeat: no-repeat;
 }
  
