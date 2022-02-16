@@ -5,10 +5,11 @@ function FotoTamis() {
     const [click,setClick] = useState(true);
     const girar = (e) => {
         setClick(!click)
-        if(!click){
-            e.target.style.transform = "rotateY(180deg)"
+        let flip = document.querySelector(".tamisFrente")
+        if(click){
+            flip.style.transform = "rotate(-2deg) rotateY(180deg)"
         } else {
-            e.target.style.transform = "rotateY(0deg)"
+            flip.style.transform = "rotate(-2deg) rotateY(0deg)"
         }
     }
   return (
