@@ -25,29 +25,36 @@
   width: 290px;
   height: 290px;
   position: absolute;
-  background-color: #4d0c5c52;
+  background-image: url("../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/FRAME\ 2\ -TAMIS\ -\ FUNDO.png");
+  background-size:cover;
   transition-duration: 2s;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   z-index: 0;
+  border: 10px solid;
+  border-image: repeating-linear-gradient(90deg,var(--terciaria),var(--secundaria),var(--primaria)) 60;
 }
 
 .tamiSeta {
-  background-image: url("../../../../imagens/05/tami-rabisco.png");
+  background-image: url("../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/RABISCO\ -\ SETA\ -\ TAMIS.png");
   background-size: cover;
   width: 150px;
   height: 44px;
   transform: translate(220px, 60px) rotate(05deg);
 }
 .tamisNome {
+  width: 60px;
+  height:350px;
   display: flex;
   flex-direction: column;
   grid-area: TamisNome;
   margin-top: 50px;
-  transform: translate(-50px);
+  transform: translate(-50px,50px);
+  background-image: url("../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/NOME\ TAMIS.png");
+  background-size:cover;
 }
-.tamisT {
+/* .tamisT {
   background-image: url("../../../../imagens/05/T-TAMIS.png");
   background-size: cover;
   height: 80px;
@@ -86,3 +93,4 @@
   width: 55px;
   cursor: pointer;
 }
+ */
