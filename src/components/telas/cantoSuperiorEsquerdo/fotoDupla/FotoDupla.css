@@ -2,26 +2,30 @@
     grid-area: fotodupla;
     width:300px;
     height:243px;
-    transform:rotate(-6deg) translate(0px, -20px);
+    transform:rotate(-6deg);
     align-self: flex-start;
     margin-left:50px;
     transform-style: preserve-3d;
     transition-duration: 2s;
 }
 .fundoDupla{
-    width:300px;
+    width:314px;
     height:243px;
-    background-color: #4d0c5cf6;
+    background-image: url('../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/FRAME\ 3\ -DUOMI\ -\ FUNDO.png');
+    background-size: cover;
     position:absolute;
     z-index: 0;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    border: 10px solid;
+    border-image: repeating-linear-gradient(90deg,var(--primaria),var(--secundaria),var(--terciaria))60;
+    
 }
 .fotoDupla{
     position:absolute;
     background-image: url("../../../../imagens/05/DUOMI.png");
     background-size: cover;
-    width:300px;
+    width:331px;
     height:243px;
     display: flex;
     align-items: flex-end;
@@ -35,5 +39,5 @@
     width:50px;
     height: 59px;
     margin-right: 17px;
-    transform: translate(0, 30px) rotate(6deg);
+    transform: translate(-20px, 30px) rotate(6deg);
 }
