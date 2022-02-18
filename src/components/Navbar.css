@@ -1,25 +1,17 @@
 .navbar {
-   background: linear-gradient(1turn,#FAAC10,#B71B43,#4D0C5C);
+   
    height: 80px;
    display: flex;
    justify-content: center; 
    align-items: center;
    font-size: 1.2rem;
    position: relative;
-   font-family:"raleway";
+   
    width: 60%;
    font-weight: bold;
-   border-radius: 60px;
-   animation: go-back 1s infinite alternate;
- }
-  @keyframes go-back{
-    from{
-      background:linear-gradient(1turn,#FAAC10,#B71B43,#4D0C5C);
-    }
-    to{
-      background:linear-gradient(0turn,#FAAC10,#B71B43,#4D0C5C);
-    }
-  }
+  
+}
+ 
  
  .navbar-container {
    display: flex;
@@ -54,6 +46,10 @@
    width: 60vw;
    justify-content: center;
    margin-right: 2rem;
+   background: linear-gradient(45deg,#4D0C5C,#B71B43,#FAAC10);
+   border-radius: 60px;
+   font-family:"raleway";
+   text-transform:uppercase ;
  }
  
  .nav-item {
@@ -65,15 +61,11 @@
    display: flex;
    align-items: center;
    text-decoration: none;
-   padding: 0.5rem 1rem;
    height: 100%;
+   justify-content: space-between;
  }
  
- .nav-links:hover {
-   border-bottom: 4px solid #fff;
-   transition: all 0.2s ease-out;
- }
- 
+
  .fa-paper-plane {
    color: #fff;
  }
@@ -110,7 +102,6 @@
  
    .nav-links {
      text-align: center;
-     padding: 2rem;
      width: 100%;
      display: table;
      vertical-align: top;
@@ -147,7 +138,6 @@
    .nav-links-mobile {
      display: block;
      text-align: center;
-     margin: 2rem auto;
      border-radius: 4px;
      width: 80%;
      text-decoration: none;

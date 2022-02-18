@@ -31,24 +31,20 @@ function Navbar() {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item' >
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            Home
+                        Quem somos
                         </Link>
                     </li>
                     <li className='nav-item' >
                         <Link to='/soul' className='nav-links' onClick={closeMobileMenu}>
-                            Quem somos
+                            Nossos Jobs
                         </Link>
                     </li>
                     <li className='nav-item' >
                         <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
-                           Entre em contato
+                           Atendimento Online
                         </Link>
                     </li>
-                    <li className='nav-item' >
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                           Nossos Serviços
-                        </Link>
-                    </li>
+                    
                 </ul>
                
                 <div>
