@@ -9,9 +9,9 @@ function FotoDupla() {
         setClick(!click)
         let flip = document.querySelector(".containerDupla")
         if(click){
-            flip.style.transform = "rotate(-6deg) translate(0px, -20px) rotateY(180deg)"
+            flip.style.transform = "rotate(-6deg) rotateY(180deg)"
         } else {
-            flip.style.transform = "rotate(-6deg) translate(0px, -20px) rotateY(0deg)"
+            flip.style.transform = "rotate(-6deg) rotateY(0deg)"
         }
         
     } 
