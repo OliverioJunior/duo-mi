@@ -7,10 +7,10 @@
     margin-left: 200px;
     transform-style: preserve-3d;
     transition-duration: 2s;
-    transform: rotate(-2deg);
+    transform: rotate(-6deg);
  }
 .Emily{
-    width: 260px;
+    width: 277px;
     height: 267px;
     background-image: url("../../../../imagens/05/FRAME_EMILY_FRENTE.png");
     background-size: cover;
@@ -21,13 +21,16 @@
     backface-visibility: hidden;
     
 }
-.fundo{
+.fundoEmily{
     width: 255px;
     height: 262px;
-    background-color: #4d0c5cf6;
+    background-image: url("../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/FRAME\ 1\ -EMILY\ -\ FUNDO.png");
+    background-size:cover;
     position:absolute;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    border: 10px solid;
+    border-image: repeating-linear-gradient(90deg,var(--terciaria),var(--secundaria),var(--primaria))60;
   }
 
 .balao{
