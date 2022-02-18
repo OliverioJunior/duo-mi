@@ -25,7 +25,7 @@ function FotoEmily() {
           <div className="balao" />
           <div className="seta_curva" />
         </div>
-        <div className='fundo' />
+        <div className='fundoEmily' />
       </div>
     </>
   )
