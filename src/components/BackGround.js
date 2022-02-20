@@ -58,6 +58,12 @@ function BackGround() {
 
     window.addEventListener("mouseup", () => {
         mouse.ativo = false;
+      /*   if(mouse.posAnterior.x < 0) {
+            mouse.posAnterior.x = 0
+        }
+        if(mouse.posAnterior.y < 0) {
+            mouse.posAnterior.y = 0
+        } */
         mouse.savePosicao.x += mouse.posAnterior.x * (-1);
         mouse.savePosicao.y += mouse.posAnterior.y * (-1);
         body.style.cursor = "grab";
