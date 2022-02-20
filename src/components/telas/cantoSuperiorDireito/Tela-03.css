@@ -4,55 +4,13 @@
     grid-area:tela03;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-end;
 }
 .fotoDeFundo{
-    background-image: url("../../../imagens/03/pcmodificado.png");
+    background-image: url("../../../imagens/NOVOS-ELEMENTOS/03-ATENDIMENTO/PC-COMPLETO.png");
     background-size: cover;
     width:771px;
-    height: 647px;
+    height: 669px;
     display: grid;
-    grid-template-areas: "col01 col02 col03";
 }
-.arquivo{
-    background-image: url("../../../imagens/03/ARQV\ EM\ PIXEL.png");
-    background-size: cover;
-    width:201px;
-    height: 234px;
-    grid-area: col01;
-}
-.plantinhaPc{
-    background-image: url("../../../imagens/03/platinhaModificada.png");
-    background-size: cover;
-    width:185px;
-    height: 286px;
-    grid-area: col01;
-}
-.ampulheta{
-    background-image: url("../../../imagens/03/ÍCONE\ CARREGANDO.png");
-    background-size: cover;
-    width:54px;
-    height: 133px;
-    grid-area: col02;
-    align-self:center;
-    justify-self: center;
-    transform: translate(45px,-135px);
-}
-.pastinha{
-    background-image: url("../../../imagens/03/PASTA\ ARQUIVO\ ROSA.png");
-    background-size: cover;
-    width:189px;
-    height: 137px;
-    grid-area: col03;
-    justify-self: center;
-    transform: translate(90px,135px)
-}
-.plantaPasta{
-    background-image: url("../../../imagens/03/plantinharosa.png");
-    background-size: cover;
-    width:209px;
-    height: 156px;
-    grid-area: col03;
-    justify-self: center;
-    transform: translate(116px,33px)
-}
+
