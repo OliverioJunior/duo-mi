@@ -11,6 +11,14 @@
     background-size: cover;
     width:771px;
     height: 669px;
-    display: grid;
+    margin-right: 100px;
 }
-
+.cantoSuperiorDireito h1 {
+    color: var(--primaria);
+    width: 260px;
+    text-transform: uppercase;
+    
+}
+.cantoSuperiorDireito span{
+    color: var(--secundaria);
+}
