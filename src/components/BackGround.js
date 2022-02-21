@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button.js';
 import './BackGround.css'
-import { Tela_01, Tela_03, Tela_05, Tela_07, Tela_09 } from './telas/index.js';
+import { Tela_01, Tela_02, Tela_03, Tela_05, Tela_07, Tela_09 } from './telas/index.js';
 
 
 
@@ -128,9 +128,7 @@ function BackGround() {
                 <Tela_01 />
                 <div className="cantoMeioEsquerdo" />
                 <Tela_07 />
-                <div className="meioSuperior">
-                </div>
-
+                <Tela_02 />
                 <Tela_05 />
 
 
