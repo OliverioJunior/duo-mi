@@ -140,7 +140,7 @@ function BackGround() {
                 <div className="cantoMeioDireito">
 
                 </div>
-              {/*   <Tela_09 /> */}
+                <Tela_09 /> 
             </div>
 
 
