@@ -15,9 +15,7 @@ function FotoDupla() {
         }
         
     } 
-      window.addEventListener('resize',(e)=>{
-        console.log(e.target)
-    }) 
+    
     return (
 
             <div className='containerDupla' onClick={Virar}>

@@ -1,7 +1,10 @@
 import React from "react"
 import "./Tela-05.css"
 import Navbar from "../../Navbar"
-const Tela_05 = () => {
+
+
+
+const Tela_05 = (props) => {
     return(
         <div className = "meio">
           <div className = "fotoPrincipal"/>
