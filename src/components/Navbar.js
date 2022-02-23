@@ -18,7 +18,23 @@ function Navbar() {
     };
 
     window.addEventListener('resize', showButton);
-
+    window.addEventListener('click',()=>{
+        const menu = document.querySelectorAll('.nav-menu a')
+        menu.forEach(i=>{
+            i.addEventListener('click',(e)=>{
+                e.preventDefault()
+                const element = e.target;
+                const id = element.getAttribute('href');
+                const to = document.querySelector(id).offsetTop;
+                console.log(id)
+                window.scrollTo({
+                    top: id,
+                    left:id,
+                    behavior:'smooth'
+                })
+            })
+        })
+    })
     return (
         <> 
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'></link>
@@ -30,19 +46,19 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item' >
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <a href='#quemsomos' className='nav-links' onClick={closeMobileMenu}>
                         Quem somos
-                        </Link>
+                        </a>
                     </li>
                     <li className='nav-item' >
-                        <Link to='/soul' className='nav-links' onClick={closeMobileMenu}>
+                        <a href='#jobs' className='nav-links' onClick={closeMobileMenu}>
                             Nossos Jobs
-                        </Link>
+                        </a>
                     </li>
                     <li className='nav-item' >
-                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                        <a href='#atendimento' className='nav-links' onClick={closeMobileMenu}>
                            Atendimento Online
-                        </Link>
+                        </a>
                     </li>
                     
                 </ul>
