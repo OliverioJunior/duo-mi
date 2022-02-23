@@ -11,7 +11,7 @@ const Tela_01 = () => {
 
     return (
 
-        <div className='cantoSuperiorEsquerdo'>
+        <div id="quemsomos" className='cantoSuperiorEsquerdo'>
             <div className=" Estatico  grid">
                 <FotoEmily/>
                 <div className="emilyNome">
