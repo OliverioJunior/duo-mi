@@ -5,11 +5,11 @@ import "./Tela-09.css"
 function Tela_09() {
     return (
 
-        <div className='cantoInferiorDireito'>
+        <div id ='jobs' className='cantoInferiorDireito'>
             <div className='tvSemColapsar'>
-                <span className='fraseTv'>Visite nosso <span> portifólio </span>  de jobs</span>
+                <h1 className='fraseTv'>Visite nosso <span> portifólio </span>  de jobs</h1>
                 <div className='televisor'>
-                    <div className='botaoPlay' />
+                    <button className='botaoPlay' />
                 </div>
             </div>
         </div>

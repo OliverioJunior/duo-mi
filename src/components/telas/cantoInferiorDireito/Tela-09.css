@@ -1,9 +1,9 @@
 .cantoInferiorDireito{
     width:100vw;
     height:100vh;
-    border: 2px solid black;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .tvSemColapsar{
     width:1000px;
@@ -11,22 +11,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
- }
+    justify-content: center;
+}
 .fraseTv{
     text-transform: uppercase;
-    width: 310px;
+    width: auto;
     height: min-content;
-    letter-spacing: 3px;
     font-weight :700;
-    transform: translate(230px,-70px);
-    color:#A6A6A6;
+    font-size: 1.3em;
+   
 }
-.filhaTv{
+.fraseTv{
     color:var(--primaria);
    
 }
-.filhaTv > span {
+.fraseTv > span {
     color: var(--secundaria);
 }
 
@@ -46,5 +45,13 @@
     width: 180px;
     height: 180px;
     align-self: center;
-    transform: translate(-70px,-10px)
+    transform: translate(-70px,-10px);
+    border-radius: 50%;
+    box-decoration-break: none;
+    border: none;
+    cursor:pointer;
 } 
+
+.botaoPlay:hover{
+    background-color:rgb(0, 0, 0);
+}
