@@ -21,7 +21,7 @@ function BackGround() {
         },
         posAnterior: {
             x: 0,
-            y: 0
+            y: 1000
         },
         posClick: {
             x: 0,
@@ -116,10 +116,13 @@ function BackGround() {
     };
 
     window.addEventListener('resize', showButton);
-    window.addEventListener('loadstart',(e)=>{
-       e.scrollTo(3000,3000)
-    });
-
+    window.addEventListener('load',()=>{
+        window.scroll({
+            top:2000,
+            behavior:"smooth",
+        })
+        console.log('Aqui')
+    })
     return (
         <>
            
