@@ -4,20 +4,16 @@ import "./Tela-09.css"
 
 function Tela_09() {
     return (
-        
+
         <div className='cantoInferiorDireito'>
             <div className='tvSemColapsar'>
-                <div className='plantaVerdeTv'/>
-                <div className='plantaRosaTv'/>
+                <span className='fraseTv'>Visite nosso <span> portifólio </span>  de jobs</span>
                 <div className='televisor'>
-                    <span className='fraseTv'> clique na <span className='filhaTv'>tv</span> para acessar a
-                    <span className="fraseFilha"> galeria de jobs</span></span>
-                    <div className='botaoPlay'/>
-                    <div className='cursor'/>
-                </div>   
+                    <div className='botaoPlay' />
+                </div>
             </div>
         </div>
-        
+
     )
 }
 export default Tela_09;
