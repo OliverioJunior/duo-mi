@@ -8,12 +8,14 @@
   --height: 120px;
 }
 .meioFrase {
+  display:flex;
   height: 200px;
   width: auto;
   color: var(--primaria);
   justify-self: center;
   align-self: center;
   text-align: center;
+  align-items:center;
 }
 
 .redesSociais {
