@@ -36,15 +36,15 @@
 .balao{
     width:72px;
     height:51px;
-    background-image: url("../../../../imagens/05/rabisco_balao.png");
+    background-image: url("../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/RABISCO\ -\ BALÃO.png");
     background-size: cover;
-    transform: translate(-20px, 53px) rotate(350deg);
+    transform: translate(-20px, 53px) rotate(15deg);
 
 }
 .seta_curva{
     width:100px;
     height: 51px;
-    background-image: url("../../../../imagens/05/seta_curva.png");
+    background-image: url("../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/RABISCO\ -\ SETA\ -\ EMILY.png");
     background-size: cover;
     transform: translate(220px,0px);
     
