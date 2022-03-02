@@ -14,9 +14,9 @@ function FotoEmily() {
       flip.style.transform = "rotate(-2deg) rotateY(0deg)"
     }
   }
-  window.addEventListener('resize', (e) => {
+ /*  window.addEventListener('resize', (e) => {
     console.log(e.target)
-  })
+  }) */
   return (
     <>
       <div className="emilyContainer" onClick={Virar}>
