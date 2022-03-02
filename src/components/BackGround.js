@@ -1,16 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import { Button } from './Button.js';
+/* eslint-disable react/jsx-pascal-case */
+import React, { useState } from 'react'
 import './BackGround.css'
 import { Tela_01, Tela_02, Tela_03, Tela_05, Tela_07, Tela_09 } from './telas/index.js';
+import {resLeft, resTop, setTela} from './Navbar'
 
 
 
 function BackGround() {
+    console.log(resLeft)
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    /* const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false); */
     const body = document.querySelector("body")
     const mouse = {
         ativo: false,
@@ -27,7 +28,7 @@ function BackGround() {
             x: 0,
             y: 0
         },
-        savePosicao: { x: 0, y: 0 }
+        savePosicao: { x: resTop, y: resLeft}
     }
     function slideScreen() {
         if (mouse.ativo) {
@@ -46,6 +47,11 @@ function BackGround() {
     })
     window.addEventListener("mousemove", (e) => {
         e.preventDefault()
+        if(setTela){
+            mouse.posClick.x = resTop
+            mouse.posClick.y = resLeft
+            setTela = false
+        }
         if (mouse.ativo) {
             mouse.posAnterior.x = mouse.posClick.x - e.clientX;
             mouse.posAnterior.y = mouse.posClick.y - e.clientY;
@@ -58,12 +64,6 @@ function BackGround() {
 
     window.addEventListener("mouseup", () => {
         mouse.ativo = false;
-      /*   if(mouse.posAnterior.x < 0) {
-            mouse.posAnterior.x = 0
-        }
-        if(mouse.posAnterior.y < 0) {
-            mouse.posAnterior.y = 0
-        } */
         mouse.savePosicao.x += mouse.posAnterior.x * (-1);
         mouse.savePosicao.y += mouse.posAnterior.y * (-1);
         body.style.cursor = "grab";
@@ -121,8 +121,8 @@ function BackGround() {
             top:2000,
             behavior:"smooth",
         })
-        console.log('Aqui')
     })
+    
     return (
         <>
            
