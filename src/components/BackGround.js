@@ -2,12 +2,12 @@
 import React, { useState } from 'react'
 import './BackGround.css'
 import { Tela_01, Tela_02, Tela_03, Tela_05, Tela_07, Tela_09 } from './telas/index.js';
-import {resLeft, resTop, setTela} from './Navbar'
-
+import Globais from './Globais';
+import { Navbar } from './Navbar';
 
 
 function BackGround() {
-    console.log(resLeft)
+    
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
     /* const handleClick = () => setClick(!click);
@@ -28,9 +28,10 @@ function BackGround() {
             x: 0,
             y: 0
         },
-        savePosicao: { x: resTop, y: resLeft}
+        savePosicao: { x: Globais.resTop, y: Globais.resLeft}
     }
     function slideScreen() {
+       
         if (mouse.ativo) {
             mouse.pos.y = (mouse.savePosicao.y - mouse.posAnterior.y) * (-0.8)
             mouse.pos.x = (mouse.savePosicao.x - mouse.posAnterior.x) * (-0.8)
@@ -44,15 +45,18 @@ function BackGround() {
         mouse.posClick.x = e.clientX
         mouse.posClick.y = e.clientY
         body.style.cursor = "grabbing"
+        if(Globais.setTela){
+            mouse.posAnterior.x = Globais.resTop
+            mouse.posAnterior.y = Globais.resLeft
+            Globais.setTela = false
+            console.log('trocou')
+            console.log(mouse.posAnterior.x)
+        }
+        
     })
     window.addEventListener("mousemove", (e) => {
         e.preventDefault()
-        if(setTela){
-            mouse.posClick.x = resTop
-            mouse.posClick.y = resLeft
-            setTela = false
-        }
-        if (mouse.ativo) {
+         if (mouse.ativo) {
             mouse.posAnterior.x = mouse.posClick.x - e.clientX;
             mouse.posAnterior.y = mouse.posClick.y - e.clientY;
             setTimeout(slideScreen(), 300)
@@ -114,14 +118,20 @@ function BackGround() {
             setClick(false)
         }
     };
+    
+   /*  primeiroLogin.addEventListener('click', (e) => {
+        e.preventDefault()
+        const element = e.target;
+        const id = element.getAttribute('href');
+        Top = document.querySelector(id).offsetTop;
+        Left = document.querySelector(id).offsetLeft;
+
+        }) */
+         
+    
 
     window.addEventListener('resize', showButton);
-    window.addEventListener('load',()=>{
-        window.scroll({
-            top:2000,
-            behavior:"smooth",
-        })
-    })
+    
     
     return (
         <>
@@ -132,7 +142,7 @@ function BackGround() {
                 <div className="cantoMeioEsquerdo" />
                 <Tela_07 />
                 <Tela_02 />
-                <Tela_05 />
+                <Tela_05 className='firstLoad'/>
 
 
 
