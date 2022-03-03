@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
+import Globais from './Globais'
 
-let resTop = 0
-let resLeft = 0
-let setTela = false;
 window.addEventListener('click', () => {
     const menu = document.querySelectorAll('.nav-menu a')
     menu.forEach(i => {
@@ -13,19 +11,18 @@ window.addEventListener('click', () => {
             const id = element.getAttribute('href');
             const Top = document.querySelector(id).offsetTop;
             const Left = document.querySelector(id).offsetLeft;
-            let resLeft = Left
-            let resTop = Top
+            Globais.resLeft = Left
+            Globais.resTop = Top
+            Globais.setTela = true;
             window.scrollTo({
-                top: resTop,
-                left: resLeft,
+                top: Globais.resTop,
+                left: Globais.resLeft,
                 behavior: 'smooth'
             })
-           setTela = true;
         })
     })
 })
-export {resLeft, setTela};
-export {resTop};
+
 
 function Navbar() {
     const [click, setClick] = useState(false);
