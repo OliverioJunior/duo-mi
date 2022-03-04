@@ -10,21 +10,23 @@ import Globais from "../../Globais"
 const Tela_05 = (props) => {
 
 
-  const menu = document.querySelectorAll('.meio')
+  /* const menu = document.querySelectorAll('.meio')
   let res = 0
   menu.forEach((i) => {
     res = i
   })
-  const res1 = res.offsetLeft
-  console.log(res1)
-  window.addEventListener('load', () => {
-    console.log('carregou')
-    window.scrollTo({
-      top: res.offsetTop,
-      left: res.offsetLeft,
-      behavior: 'smooth'
-    })
-  })
+  Globais.resLeft = res.offsetLeft
+  Globais.resTop = res.offsetTop
+
+  window.addEventListener('load', ()=>{
+    console.log('load')
+  
+    window.scrollTo(
+        {top: Globais.resTop,
+        left: Globais.resLeft,
+        behavior: 'smooth'}
+    )
+}) */
 
   return (
     <div className="meio">
