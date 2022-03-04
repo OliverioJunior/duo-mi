@@ -14,11 +14,13 @@ window.addEventListener('click', () => {
             Globais.resLeft = Left
             Globais.resTop = Top
             Globais.setTela = true;
-            window.scrollTo({
+           console.log('aqui')
+            window.scrollTo({   
                 top: Globais.resTop,
                 left: Globais.resLeft,
                 behavior: 'smooth'
             })
+            
         })
     })
 })
