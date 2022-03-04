@@ -37,24 +37,34 @@ function BackGround() {
             mouse.pos.x = (mouse.savePosicao.x - mouse.posAnterior.x) * (-0.8)
             window.scroll({ top: mouse.pos.y, left: mouse.pos.x })
         }
+        console.log('SlideScreen='+mouse.savePosicao.x)
     }
 
-
+   /*  window.addEventListener('scroll',(e)=>{
+        console.log('scrolling')
+        console.log(e)
+    }) */
     window.addEventListener("mousedown", (e) => {
+        if(Globais.setTela){
+            console.log('Restop =' + Globais.resTop)
+            console.log('PosAnterior ='+mouse.savePosicao.x)
+            mouse.savePosicao.x = Globais.resTop
+            mouse.savePosicao.y = Globais.resLeft
+            Globais.setTela = false
+            console.log('PosAnteriorNov='+mouse.savePosicao.x)
+        }
         mouse.ativo = true
         mouse.posClick.x = e.clientX
         mouse.posClick.y = e.clientY
         body.style.cursor = "grabbing"
-        if(Globais.setTela){
-            mouse.posAnterior.x = Globais.resTop
-            mouse.posAnterior.y = Globais.resLeft
-            Globais.setTela = false
-            console.log('trocou')
-            console.log(mouse.posAnterior.x)
-        }
+       
+       
         
     })
     window.addEventListener("mousemove", (e) => {
+        if(Globais.setTela){
+            return
+        }
         e.preventDefault()
          if (mouse.ativo) {
             mouse.posAnterior.x = mouse.posClick.x - e.clientX;
@@ -67,9 +77,13 @@ function BackGround() {
 
 
     window.addEventListener("mouseup", () => {
+        if(Globais.setTela){
+            return
+        }
         mouse.ativo = false;
         mouse.savePosicao.x += mouse.posAnterior.x * (-1);
         mouse.savePosicao.y += mouse.posAnterior.y * (-1);
+        console.log('MouseUp='+mouse.savePosicao.x)
         body.style.cursor = "grab";
     })
 
@@ -131,7 +145,7 @@ function BackGround() {
     
 
     window.addEventListener('resize', showButton);
-    
+   
     
     return (
         <>
