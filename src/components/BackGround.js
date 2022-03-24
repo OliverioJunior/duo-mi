@@ -1,12 +1,13 @@
 /* eslint-disable react/jsx-pascal-case */
 import React, { useState } from 'react'
 import './BackGround.css'
-import { Tela_01, Tela_02, Tela_03, Tela_05, Tela_07, Tela_09 } from './telas/index.js';
+import { Tela_01, Tela_02, Tela_03, Tela_07, Tela_09 } from './telas/index.js';
+import  Tela_05  from './telas/meio/Tela-05';
 import Globais from './Globais';
 import { Navbar } from './Navbar';
 
 
-function BackGround() {
+function  BackGround() {
     
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -16,6 +17,7 @@ function BackGround() {
     const mouse = {
         ativo: false,
         movendo: false,
+        desenhando: false,
         pos: {
             x: 0,
             y: 0
@@ -32,10 +34,10 @@ function BackGround() {
     }
     function slideScreen() {
        
-        if (mouse.ativo) {
-            mouse.pos.y = (mouse.savePosicao.y - mouse.posAnterior.y) * (-0.8)
-            mouse.pos.x = (mouse.savePosicao.x - mouse.posAnterior.x) * (-0.8)
-            window.scroll({ top: mouse.pos.y, left: mouse.pos.x })
+        if (mouse.ativo && mouse.desenhando !== true) {
+            mouse.pos.y = (mouse.savePosicao.y - mouse.posAnterior.y)*(-1) 
+            mouse.pos.x = (mouse.savePosicao.x - mouse.posAnterior.x)*(-1) 
+            window.scroll({ top: mouse.pos.y, left: mouse.pos.x , behavior: 'smooth' })
         }
         console.log('SlideScreen='+mouse.savePosicao.x)
     }
@@ -45,7 +47,7 @@ function BackGround() {
         console.log(e)
     }) */
     window.addEventListener("mousedown", (e) => {
-        if(Globais.setTela){
+        if(Globais.setTela && mouse.desenhando !== true){
             console.log('Restop =' + Globais.resTop)
             console.log('PosAnterior ='+mouse.savePosicao.x)
             mouse.savePosicao.x = Globais.resTop
@@ -66,25 +68,29 @@ function BackGround() {
             return
         }
         e.preventDefault()
-         if (mouse.ativo) {
+         if (mouse.ativo && mouse.desenhando !== true) {
             mouse.posAnterior.x = mouse.posClick.x - e.clientX;
             mouse.posAnterior.y = mouse.posClick.y - e.clientY;
-            setTimeout(slideScreen(), 300)
+            setTimeout(slideScreen(), 150)
         }
     })
-
-
-
-
+    
     window.addEventListener("mouseup", () => {
-        if(Globais.setTela){
-            return
+        if(mouse.savePosicao.x > 0){
+            mouse.savePosicao.x = 0
         }
+        if(mouse.savePosicao.y > 0){
+            mouse.savePosicao.y = 0
+        }
+        
+       
+        if(mouse.ativo && mouse.desenhando !== true){
         mouse.ativo = false;
         mouse.savePosicao.x += mouse.posAnterior.x * (-1);
         mouse.savePosicao.y += mouse.posAnterior.y * (-1);
         console.log('MouseUp='+mouse.savePosicao.x)
-        body.style.cursor = "grab";
+        body.style.cursor = "grab";     
+        }
     })
 
     /*  const canvasRef = useRef(null) 
