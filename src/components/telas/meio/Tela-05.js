@@ -7,15 +7,15 @@ import Globais from "../../Globais"
 
 
 
-const Tela_05 = (props) => {
+export default  function Tela_05(props){
 
 
-  /* const menu = document.querySelectorAll('.meio')
+  const menu = document.querySelectorAll('.meio')
   let res = 0
-  menu.forEach((i) => {
+ menu.forEach((i) => {
     res = i
   })
-  Globais.resLeft = res.offsetLeft
+  Globais.resLeft =  res.offsetLeft
   Globais.resTop = res.offsetTop
 
   window.addEventListener('load', ()=>{
@@ -26,7 +26,7 @@ const Tela_05 = (props) => {
         left: Globais.resLeft,
         behavior: 'smooth'}
     )
-}) */
+}) 
 
   return (
     <div className="meio">
@@ -36,4 +36,4 @@ const Tela_05 = (props) => {
   )
 }
 
-export default Tela_05;
+
