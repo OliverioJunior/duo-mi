@@ -14,7 +14,7 @@ window.addEventListener('click', () => {
             Globais.resLeft = Left
             Globais.resTop = Top
             Globais.setTela = true;
-           console.log('aqui')
+           console.log('Chamou NavBar')
             window.scrollTo({   
                 top: Globais.resTop,
                 left: Globais.resLeft,
@@ -28,19 +28,9 @@ window.addEventListener('click', () => {
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
-    const handleClick = () => setClick(!click);
+   const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-    /*    const showButton = () => {
-           if(window.innerWidth<=960){
-               setButton(false)
-           } else {
-               setButton(true)
-           }
-       }; */
-
-    /* window.addEventListener('resize', showButton); */
 
     return (
         <>
