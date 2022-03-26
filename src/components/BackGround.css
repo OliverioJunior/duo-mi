@@ -16,8 +16,8 @@ body {
     overflow: hidden;
 } 
 .back-ground{
-    width: 300vw;
-    height: 300vh;
+    min-width: 300vw;
+    min-height: 300vh;
     background-image: url('../imagens/01/FUNDO-COMPLETO.png');
     background-size: cover;
     background-repeat: no-repeat;
