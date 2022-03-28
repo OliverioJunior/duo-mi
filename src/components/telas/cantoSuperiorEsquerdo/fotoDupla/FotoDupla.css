@@ -19,6 +19,7 @@
     transform: rotateY(180deg);
     border: 10px solid;
     border-image: repeating-linear-gradient(90deg,var(--primaria),var(--secundaria),var(--terciaria))60;
+    cursor: pointer;
     
 }
 .fotoDupla{
@@ -31,6 +32,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     z-index: 1;
+    cursor: pointer;
     backface-visibility: hidden;
 }
 .fotoDuplaCursor{
