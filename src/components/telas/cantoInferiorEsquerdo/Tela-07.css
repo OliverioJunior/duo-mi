@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
 }
-.giz{
+/* .giz{
     background-image: url("../../../imagens/06/GizDeCera.png");
     position:absolute;
     width:527px;
@@ -14,7 +14,7 @@
     background-size: cover;
     transform: translate(-500px,150px)rotate(345deg);
     z-index: 1000;
-}
+} */
 .desenhoArea{
     width: 80vw;
     height: 80vh;
@@ -36,42 +36,53 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left:10px;
 }
-
+.desenhar{
+    width:50px;
+    border:none;
+    background:transparent;
+}
 .vermelho{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
     background-color: #F0523C;
+    cursor:pointer;
 }
 .amarelo{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
     background-color: #F8A74E;
+    cursor:pointer;
 }
 .verde{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
     background-color: #64885B;
+    cursor:pointer;
 }
 .azul{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
     background-color: #1A93AA;
+    cursor:pointer;
 }
 .roxo{
     width:var(--dimensao);
     height:var(--dimensao);
     border-radius: 50%;
     background-color: #B17C95;
+    cursor:pointer;
 }
 .salvarDesenho{
-    width:100px;
-    height:120px;
+    width:80px;
+    height:96px;
     background-image: url("../../../imagens/06/ARQUIVO-ENVIE.png");
     background-size: cover; 
-    border:none;   
+    border:none; 
+    cursor:pointer;  
 }
