@@ -15,21 +15,20 @@ function  BackGround() {
         savePosition: {
             x: 0,
             y: 0
-        },
-        drawing: false,
-    };
+        }
+     };
   window.addEventListener('mousedown',(e)=>{
-      if(mouse.drawing === false){
+      if(Globais.setDrawing === false){
             Globais.resRight =  window.scrollX;
             Globais.resTop = window.scrollY;
             mouse.x = e.clientX;
             mouse.y = e.clientY;
             mouse.mouseMove = true;
-            body.style.cursor = 'grabing';
+            body.style.cursor = 'grabbing';
     }
   })
   window.addEventListener('mouseup',()=>{
-      if(mouse.drawing === false){
+      if(Globais.setDrawing === false){
             mouse.mouseMove = false;
             mouse.savePosition.x = window.scrollX;
             mouse.savePosition.y = window.scrollY;
@@ -40,16 +39,19 @@ function  BackGround() {
       //to take the mouse position
       //prevent mouse comportament 
     e.preventDefault();
-    if(mouse.mouseMove && mouse.drawing === false){
+    if(mouse.mouseMove && Globais.setDrawing === false){
         const x = e.clientX - mouse.x;
         const y = e.clientY - mouse.y;
         window.scrollTo(Globais.resRight - x, Globais.resTop - y, {behavior: 'smooth'});
     }
   })
-  // function for first load center screen
-    window.addEventListener('load', (e)=>{
-       console.log(Tela_05)
-    })
+
+  
+  
+
+  
+
+  
 
 
 
