@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import FotoDupla from "./fotoDupla/FotoDupla";
 import FotoEmily from "./fotoEmily/FotoEmily";
 import FotoTamis from "./fotoTamis/FotoTamis";
@@ -15,11 +15,7 @@ const Tela_01 = () => {
             <div className=" Estatico  grid">
                 <FotoEmily/>
                 <div className="emilyNome">
-                    <div className="emilyE" />
-                    <div className="emilyM" />
-                    <div className="emilyI" />
-                    <div className="emilyL" />
-                    <div className="emilyY" />
+                    
                 </div>
                 <div className='Texto' >
                     <h1>Clique na <span>imagem</span> para conhecer essa <span>dupla</span></h1>

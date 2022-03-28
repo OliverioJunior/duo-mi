@@ -35,46 +35,12 @@
     display: flex;
     grid-area: emilyn;
     /* transform: translate(-55px); */
+    background-image: url('../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/NOME\ EMILY.png');
+    background-size:cover;
+    width:330px;
+    height: 48px;
+    justify-self: center;
     
-}
-.emilyE{
-    background-image: url("../../../imagens/05/E_EMILY.png");
-    background-size: cover;
-    height: 80px;
-    width:71px;
-    cursor:pointer;
-}
-.emilyM{
-    background-image: url("../../../imagens/05/M-EMILY.png");
-    background-size: cover;
-    height: 85px;
-    width:90px;
-    cursor:pointer;
-    margin-left:10px;
-}
-.emilyI{
-    background-image: url("../../../imagens/05/I-EMILY.png");
-    background-size: cover;
-    height: 85px;
-    width:70px;
-    cursor:pointer;
-    margin-left:10px;
-}
-.emilyL{
-    background-image: url("../../../imagens/05/L-EMILY.png");
-    background-size: cover;
-    height: 100px;
-    width:74px;
-    cursor:pointer;
-    margin-left:10px;
-}
-.emilyY{
-    background-image: url("../../../imagens/05/Y-EMILY.png");
-    background-size: cover;
-    height: 100px;
-    width:67px;
-    cursor:pointer;
-    margin-left:10px;
 }
 .Texto{
     grid-area: texto;
