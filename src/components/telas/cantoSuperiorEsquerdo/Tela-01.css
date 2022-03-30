@@ -1,6 +1,6 @@
 .cantoSuperiorEsquerdo{
-    width:100vw;
-    height: 100vh;
+    width:1000px;
+    height: 700px;
     grid-area: tela01;
 }
 .Estatico{

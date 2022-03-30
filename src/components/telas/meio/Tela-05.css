@@ -1,7 +1,7 @@
 
 .meio{
-    width:100vw;
-    height: 100vh;
+    min-width:1000px;
+    min-width: 700px;
     grid-area:tela05;
     flex-direction: column;
     display: flex;

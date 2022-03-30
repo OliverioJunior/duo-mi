@@ -1,6 +1,6 @@
 .cantoSuperiorDireito{
-    width:100vw;
-    height:100vh;
+    min-width:1000px;
+    min-width: 700px;
     grid-area:tela03;
     display: flex;
     align-items: center;
