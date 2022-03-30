@@ -10,14 +10,12 @@
     font-family:"raleway"
 }
 body {
-    width:300vw;
-    height:300vh;
     cursor:grab;
-    overflow: hidden;
+   
 } 
 .back-ground{
-    min-width: 300vw;
-    min-height: 300vh;
+    min-width: 2700px;
+    min-height: 2500px;
     background-image: url('../imagens/01/FUNDO-COMPLETO.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,8 +27,9 @@ body {
     "tela01 tela02 tela03"
     "tela04 tela05 tela06"
     "tela07 tela08 tela09";
-    grid-template-columns: repeat(3,100vw);
-    grid-template-rows: repeat(3,100vh);
+    grid-template-columns: repeat(3,1500px);
+    grid-template-rows: repeat(3,1200px);
 }
+
 
 
