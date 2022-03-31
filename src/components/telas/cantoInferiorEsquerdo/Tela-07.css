@@ -47,6 +47,7 @@
     border:none;
     background:transparent;
     cursor:pointer;
+    margin-bottom: 10px;
 }
 .vermelho{
     width:var(--dimensao);
@@ -54,6 +55,7 @@
     border-radius: 50%;
     background-color: #F0523C;
     cursor:pointer;
+    margin-bottom: 10px;
 }
 .amarelo{
     width:var(--dimensao);
@@ -61,6 +63,7 @@
     border-radius: 50%;
     background-color: #F8A74E;
     cursor:pointer;
+    margin-bottom: 10px;
 }
 .verde{
     width:var(--dimensao);
@@ -68,6 +71,7 @@
     border-radius: 50%;
     background-color: #64885B;
     cursor:pointer;
+    margin-bottom: 10px;
 }
 .azul{
     width:var(--dimensao);
@@ -75,6 +79,7 @@
     border-radius: 50%;
     background-color: #1A93AA;
     cursor:pointer;
+    margin-bottom: 10px;
 }
 .roxo{
     width:var(--dimensao);
@@ -82,17 +87,21 @@
     border-radius: 50%;
     background-color: #B17C95;
     cursor:pointer;
+    margin-bottom: 10px;
 }
 .erase{
     width:var(--dimensao);
     height:var(--dimensao);
-    border-radius: 50%;
-    background-color: #ffffff;
+    background:transparent;
+    border: none;
+    shape-rendering: crispEdges;
+    fill: url(#MyGradient);
     cursor:pointer;
+    margin-bottom: 10px;
 }
 .salvarDesenho{
-    width:60px;
-    height:70px;
+    width: 42px;
+    height: 51px;
     background-image: url("../../../imagens/06/ARQUIVO-ENVIE.png");
     background-size: cover; 
     border:none; 
