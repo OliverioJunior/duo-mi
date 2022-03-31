@@ -16,30 +16,22 @@
     z-index: 1000;
 } */
 .criatividade{
-    width: 1548px;
-    height: 767px;
-    background-image: url("../../../imagens/NOVOS-ELEMENTOS/05-CRIATIVIDADE/Criatividade.png");
+    width: 1150px;
+    height: 567px;
+    /* background-image: url("../../../imagens/NOVOS-ELEMENTOS/05-CRIATIVIDADE/Criatividade.png");
+    background-size: cover; */
+    border-radius:50px; 
+    border:10px solid transparent; 
+    background:linear-gradient(90deg,var(--terciaria),var(--secundaria),var(--primaria)) border-box; /*3*/
     align-items: center;
     justify-content: center;
     display: flex;
+    z-index:0;
+
 }
-@media screen and (max-width: 1024px){
-    .criatividade{
-        width: 1548px;
-        height: 767px;
-    }
-}
-    
 
 .drawCanvas{
     border-radius:50px; 
-    border:10px solid transparent; 
-   -webkit-mask:
-       linear-gradient(0 0 0) padding-box, 
-       linear-gradient(0 0 0);
-       mask:border-box;
-    -webkit-mask-composite: xor; 
-            mask-composite: exclude;
 }
 
 .selecionarCores{
@@ -91,9 +83,16 @@
     background-color: #B17C95;
     cursor:pointer;
 }
+.erase{
+    width:var(--dimensao);
+    height:var(--dimensao);
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor:pointer;
+}
 .salvarDesenho{
-    width:80px;
-    height:96px;
+    width:60px;
+    height:70px;
     background-image: url("../../../imagens/06/ARQUIVO-ENVIE.png");
     background-size: cover; 
     border:none; 

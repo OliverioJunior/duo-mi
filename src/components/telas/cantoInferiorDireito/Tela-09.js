@@ -9,7 +9,8 @@ function Tela_09() {
             <div className='tvSemColapsar'>
                 <h1 className='fraseTv'>Visite nosso <span> portifólio </span>  de jobs</h1>
                 <div className='televisor'>
-                    <button className='botaoPlay' />
+                     <a  className='botaoPlay'  dangerouslySetInnerHTML={{ __html: '' }} href='https://www.behance.net/estudioduomi?tracking_source=search_projects%7Cduomi%20' rel="noreferrer"  target ='_blank'></a>
+                    
                 </div>
             </div>
         </div>
