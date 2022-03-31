@@ -27,8 +27,13 @@ body {
     "tela01 tela02 tela03"
     "tela04 tela05 tela06"
     "tela07 tela08 tela09";
-    grid-template-columns: repeat(3,1500px);
-    grid-template-rows: repeat(3,1200px);
+    /* create grid symmetrical*/
+
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 300px;
+
 }
 
 
