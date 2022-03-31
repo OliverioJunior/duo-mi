@@ -13,6 +13,16 @@
     height: 669px;
     margin-right: 100px;
 }
+.linkFor{
+    background-image: url("../../../imagens/04/CURSOR\ -\ TV.png") ; 
+    background-size: cover;
+    width: 84px;
+    height: 95px;
+    transform: translate(306px, 179px) rotate(16deg);
+    border: none;
+    text-decoration:none;
+    border-block-style: none;
+}
 .cantoSuperiorDireito h1 {
     color: var(--primaria);
     width: 260px;
