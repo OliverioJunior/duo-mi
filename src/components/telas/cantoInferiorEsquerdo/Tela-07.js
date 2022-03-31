@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./Tela-07.css"
 import Globais from "../../Globais";
 import CanvasDraw from "react-canvas-draw";
@@ -13,7 +13,7 @@ function Tela_07(props) {
     const icons = Globais.setDrawing ? pen : hand;
     const [draw, setDraw] = useState(true);
     const [color, setColor] = useState("#000");
-    const [save,setSave] = useState(null);
+   /*  const [save,setSave] = useState(null); */
     function setDrawing() {
         Globais.setDrawing = !Globais.setDrawing;
         setDraw(!draw)
@@ -36,12 +36,14 @@ function Tela_07(props) {
         <div className="cantoInferiorEsquerdo">
             <div className='criatividade'>
             <CanvasDraw className="drawCanvas"
-                canvasWidth={1488}
-                canvasHeight={708}
+                canvasWidth={1120}
+                canvasHeight={540}
                 disabled = {draw} 
                 hideGrid = {false} 
                 brushColor = {color}
-                saveData = {save}
+                brushRadius= {5}
+                gridColor= {"rgba(23,2,30,0.17)"}
+               /*  saveData = {save} */
             />
             </div>
             <div className='selecionarCores'>
@@ -53,6 +55,7 @@ function Tela_07(props) {
                 <button className='verde' onClick = {()=> setColor('#64885B')}/>
                 <button className='azul' onClick = {()=> setColor('#1A93AA')}/>
                 <button className='roxo' onClick = {()=> setColor('#B17C95')}/>
+                <button className='erase' onClick = {()=> setColor('#ffff')}/>
                 <button className='salvarDesenho' onClick = {download} />
 
 
