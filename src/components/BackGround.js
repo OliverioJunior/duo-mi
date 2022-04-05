@@ -67,6 +67,9 @@ function BackGround() {
             //prevent mouse comportament 
             
             e.preventDefault();
+            if(Globais.setDrawing){
+                return
+            }
             if (mouse.mouseMove && Globais.setDrawing === false) {
                 const x = e.clientX - mouse.x;
                 const y = e.clientY - mouse.y;
@@ -83,7 +86,7 @@ function BackGround() {
                             
                         
                     </div>
-                    <div ref={quadradoRef}className= {show ? "quadradoNone" : "quadrado"}  onClick={buttonScroll}>
+                    <div ref={quadradoRef}className= {show ? "quadradoNone" : "quadrado"}  onClick={buttonScroll} >
                         
                     </div>
                     <Tela_01 />
