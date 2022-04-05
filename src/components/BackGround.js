@@ -10,6 +10,7 @@ function BackGround() {
     const body = document.querySelector('body');
     const [show, setShow] = useState(false);
     const quadradoRef = useRef(null);
+    const loadRef = useRef(null);
     const mouse = {
         x: 0,
         y: 0,
@@ -19,13 +20,26 @@ function BackGround() {
             y: 0
         }
     };
+
         useLayoutEffect(() => {
-            console.log(quadradoRef.current)
+          
           window.addEventListener('load', () => {
               window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
-          })
+           })
+           console.log(loadRef.current);
+            function disable () {
+                loadRef.current.style.display = 'none';
+            }
+            function opacity () {
+                let opacity = 0;
+                loadRef.current.style.opacity = opacity;
+            }
+            setTimeout(opacity, 3000);
+            setTimeout(disable, 3000);
         }) 
-        
+         function buttonScroll(){
+            window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
+        }
 
          window.addEventListener('mousedown', (e) => {
             if (Globais.setDrawing === false) {
@@ -47,9 +61,11 @@ function BackGround() {
             }
           
         })
+        
         window.addEventListener('mousemove', (e) => {
             //to take the mouse position
             //prevent mouse comportament 
+            
             e.preventDefault();
             if (mouse.mouseMove && Globais.setDrawing === false) {
                 const x = e.clientX - mouse.x;
@@ -57,11 +73,19 @@ function BackGround() {
                 window.scrollTo(Globais.resRight - x, Globais.resTop - y, { behavior: 'smooth' });
             }
         })
-   
+      
         return (
             <>
                 <div className='back-ground'>
-                    <div ref={quadradoRef}className='quadrado'/>
+                    <div ref={loadRef} className='screenload'>
+                        <div className='screenload-container'/>
+                        <div className='c-loader'/>
+                            
+                        
+                    </div>
+                    <div ref={quadradoRef}className= {show ? "quadradoNone" : "quadrado"}  onClick={buttonScroll}>
+                        
+                    </div>
                     <Tela_01 />
                     <div className="cantoMeioEsquerdo" />
                     <Tela_07 />
