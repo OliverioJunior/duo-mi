@@ -3,5 +3,5 @@ export default class Globais {
     static resRight = 0;
     static setDrawing = false;
     static loadTop = 0;
-    static loadleft = 0;
+    static loadLeft = 0;
 }

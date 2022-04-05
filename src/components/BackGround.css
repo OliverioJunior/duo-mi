@@ -7,7 +7,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:"raleway"
+    font-family:"raleway";
+    font-weight:1000;
+    
 }
 body {
     cursor:grab;
@@ -15,6 +17,65 @@ body {
     background-color: rgb(243, 241, 241);
    
 } 
+.screenload{
+    animation: blink 3s infinite  alternate;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 241, 241);
+    position:fixed;
+    z-index: 1001;
+}
+
+.c-loader {
+    animation: is-rotating .8s infinite;
+    border: 6px solid var(--secundaria);
+    border-radius: 50%;
+    border-top-color: var(--primaria);
+    border-left-color: var(--secundaria);
+    border-bottom-color: var(--terciaria);
+    height: 50px;
+    width: 50px;
+  }
+  @keyframes blink {
+      to {
+        background-color: rgb(223, 215, 215)
+      }
+}
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+.quadrado{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#4D0C5C,#B71B43,#FAAC10);
+    z-index:1000;
+    top: 80vh;
+    left: 90vw;
+   /*  display: flex;
+    top: 500px;
+    left: 1050px;
+    z-index: 1000; */
+   /*  position: fixed;
+    width: 225px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.521);
+    display: flex;
+    top: 400px;
+    left: 980px;
+    z-index: 1000; */
+}
+.quadradoNone {
+    display:none;
+}
 .back-ground{
     min-width:4030px;
     min-height: 2500px;
@@ -33,7 +94,7 @@ body {
     background-color: rgb(243, 241, 241);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 300px;
+   /*  grid-gap: 200px; */
 
 }
 

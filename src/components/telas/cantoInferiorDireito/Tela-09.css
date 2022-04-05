@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family:"raleway";
+    font-size:bold;
 }
 .tvSemColapsar{
     width:1000px;
