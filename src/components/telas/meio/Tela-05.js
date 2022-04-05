@@ -6,7 +6,6 @@ import Globais from "../../Globais";
 export default  function Tela_05(props){
   const firstRef = useRef();
   useLayoutEffect(() => {
-    console.log(firstRef.current)
     const element = firstRef.current;
     Globais.loadTop = element.offsetTop;
     Globais.loadLeft = element.offsetLeft;
