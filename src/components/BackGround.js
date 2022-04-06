@@ -48,6 +48,7 @@ function BackGround() {
         }) 
          function buttonScroll(){
             window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
+            setShow(true);
         }
         
          window.addEventListener('mousedown', (e) => {
