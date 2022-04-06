@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Navbar.css'
 import Globais from './Globais'
 
@@ -14,7 +14,6 @@ window.addEventListener('click', () => {
             Globais.resLeft = Left
             Globais.resTop = Top
             Globais.setTela = true;
-           console.log('Chamou NavBar')
             window.scrollTo({   
                 top: Globais.resTop,
                 left: Globais.resLeft,
@@ -28,28 +27,39 @@ window.addEventListener('click', () => {
 
 function Navbar() {
     const [click, setClick] = useState(false);
-   const handleClick = () => setClick(!click);
+    
     const closeMobileMenu = () => setClick(false);
-
-
+    /* const [animation, setAnimation] = useState(false); */
+    const animaRef = useRef(null);
+    
+    useEffect(() => {
+        const element = animaRef.current;
+       /*  element.addEventListener('mousemove',() => {
+            setAnimation(true);
+            let deg = 45;
+             deg = deg + 1;
+            element.style.background = `linear-gradient(${deg}deg,#4D0C5C,#B71B43,#FAAC10)`;
+            console.log(deg); */
+         
+       
+       
+    },)
+   
+    
     return (
         <>
             <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'></link>
-            <nav className='navbar'>
-                <div className='navbar-container'>
-
-                    <div onClick={handleClick} className='menu-icon' >
-                        <i className={click ? 'fas fa-times' : 'fas fa-paper-plane'}></i>
-                    </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <nav  className='navbar'>
+                <div ref={animaRef} className='navbar-container'>
+                    <ul className='nav-menu'>
                         <li className='nav-item' >
                             <a href='#quemsomos' className='nav-links' onClick={closeMobileMenu}>
-                                Quem somos
+                                Quem somos  
                             </a>
                         </li>
                         <li className='nav-item' >
                             <a href='#jobs' className='nav-links' onClick={closeMobileMenu}>
-                                Nossos Jobs
+                                Nossos Jobs 
                             </a>
                         </li>
                         <li className='nav-item' >
@@ -59,11 +69,7 @@ function Navbar() {
                         </li>
 
                     </ul>
-
-                    <div>
-
-                    </div>
-                </div>
+                 </div>
             </nav>
         </>
     )
