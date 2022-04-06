@@ -8,7 +8,7 @@ import Globais from './Globais';
 
 function BackGround() {
     const body = document.querySelector('body');
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
     const quadradoRef = useRef(null);
     const loadRef = useRef(null);
     const mouse = {
@@ -20,11 +20,13 @@ function BackGround() {
             y: 0
         }
     };
+    let fineshLoad = useRef(false);
 
         useLayoutEffect(() => {
           
           window.addEventListener('load', () => {
               window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
+              fineshLoad.current = true;
            })
            console.log(loadRef.current);
             function disable () {
@@ -34,14 +36,22 @@ function BackGround() {
                 let opacity = 0;
                 loadRef.current.style.opacity = opacity;
             }
-            setTimeout(opacity, 3000);
-            setTimeout(disable, 3000);
+            function endload(){
+                if(fineshLoad){
+                   setTimeout(opacity,3000) 
+                   setTimeout(disable,3000) 
+                  
+                }
+            }
+            endload();
+           
         }) 
          function buttonScroll(){
             window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
         }
-
+        
          window.addEventListener('mousedown', (e) => {
+
             if (Globais.setDrawing === false) {
                 Globais.resRight = window.scrollX;
                 Globais.resTop = window.scrollY;
@@ -54,6 +64,11 @@ function BackGround() {
         })
         window.addEventListener('mouseup', (e) => {
             if (Globais.setDrawing === false) {
+                if(e.target.className === "meio"){
+                    setShow(true)
+                }else{
+                    setShow(false)
+                }
                 mouse.mouseMove = false;
                 mouse.savePosition.x = window.scrollX;
                 mouse.savePosition.y = window.scrollY;
@@ -68,6 +83,7 @@ function BackGround() {
             
             e.preventDefault();
             if(Globais.setDrawing){
+                setShow(true)
                 return
             }
             if (mouse.mouseMove && Globais.setDrawing === false) {
@@ -87,7 +103,7 @@ function BackGround() {
                         
                     </div>
                     <div ref={quadradoRef}className= {show ? "quadradoNone" : "quadrado"}  onClick={buttonScroll} >
-                        
+                        <h1>DuoMi</h1>
                     </div>
                     <Tela_01 />
                     <div className="cantoMeioEsquerdo" />
