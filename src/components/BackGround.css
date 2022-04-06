@@ -60,18 +60,16 @@ body {
     z-index:1000;
     top: 80vh;
     left: 90vw;
-   /*  display: flex;
-    top: 500px;
-    left: 1050px;
-    z-index: 1000; */
-   /*  position: fixed;
-    width: 225px;
-    height: 150px;
-    background-color: rgba(255, 0, 0, 0.521);
+    cursor: pointer;
     display: flex;
-    top: 400px;
-    left: 980px;
-    z-index: 1000; */
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.quadrado h1 {
+  font-size:1em;
+  color:white;
+  padding-left: 17px;
 }
 .quadradoNone {
     display:none;
