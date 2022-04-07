@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
-import React,{useState, useEffect, useRef, useLayoutEffect} from 'react';
+import React,{useState, useRef, useLayoutEffect} from 'react';
 import './BackGround.css';
 import { Tela_01, Tela_02, Tela_03, Tela_07, Tela_09 } from './telas/index.js';
 import Tela_05 from './telas/meio/Tela-05';
@@ -11,6 +11,7 @@ function BackGround() {
     const [show, setShow] = useState(true);
     const quadradoRef = useRef(null);
     const loadRef = useRef(null);
+    const focusRef = useRef(null);
     const mouse = {
         x: 0,
         y: 0,
@@ -27,8 +28,9 @@ function BackGround() {
           window.addEventListener('load', () => {
               window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
               fineshLoad.current = true;
+              
            })
-           console.log(loadRef.current);
+          
             function disable () {
                 loadRef.current.style.display = 'none';
             }
@@ -110,7 +112,7 @@ function BackGround() {
                     <div className="cantoMeioEsquerdo" />
                     <Tela_07 />
                     <Tela_02 />
-                    <Tela_05 className='firstLoad' />
+                    <Tela_05 ref={focusRef}/>
                     <div className="meioInferior">
                     </div>
                     <Tela_03 />
