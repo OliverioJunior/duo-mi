@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect} from "react";
-import "./Tela-07.css"
+import "./Criatividade.css"
 import Globais from "../../Globais";
 import CanvasDraw from "react-canvas-draw";
 import axios from "axios";
@@ -8,7 +8,7 @@ import Icons from './const';
 
 
 
-function Tela_07(props) {
+function Criatividade(props) {
 
     const [icon, setIcon] = useState(false);
     const 
@@ -29,7 +29,7 @@ function Tela_07(props) {
         const element = canvasRef.current;
         const button = buttonRef.current;
         const clear = clearRef.current;
-        const penSize = penSizeRef.current;
+      /*   const penSize = penSizeRef.current; */
         const input = inputRef.current;
         const container = containerRef.current;
         clear.addEventListener('click', () => {
@@ -140,4 +140,4 @@ function Tela_07(props) {
     )
 }
 
-export default Tela_07;
+export default Criatividade;

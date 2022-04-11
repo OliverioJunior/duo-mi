@@ -1,8 +1,8 @@
 
 import React from 'react';
-import "./Tela-02.css";
+import "./RedesSociais.css";
 
-function Tela_02(){
+function RedesSociais(){
     return(
         <div className='meioSuperior'>
           <div className='centermeiosuperior'>
@@ -20,4 +20,4 @@ function Tela_02(){
     )
 }
 
-export default Tela_02;
+export default RedesSociais;
