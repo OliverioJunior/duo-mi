@@ -54,7 +54,7 @@ function BackGround() {
         }
         
          window.addEventListener('mousedown', (e) => {
-
+            e.preventDefault();
             if (Globais.setDrawing === false) {
                 Globais.resRight = window.scrollX;
                 Globais.resTop = window.scrollY;
@@ -66,6 +66,7 @@ function BackGround() {
            
         })
         window.addEventListener('mouseup', (e) => {
+            e.preventDefault();
             if (Globais.setDrawing === false) {
                 if(e.target.className === "meio"){
                     setShow(true)

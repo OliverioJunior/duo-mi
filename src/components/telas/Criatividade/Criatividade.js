@@ -20,8 +20,8 @@ function Criatividade(props) {
     const buttonRef = useRef(null);
     const clearRef = useRef(null);
     const penSizeRef = useRef(null);
-    const inputRef = useRef(null);
-    const containerRef = useRef(null);
+   /*  const inputRef = useRef(null);
+    const containerRef = useRef(null); */
     let link = useRef(null);
     let bolleanLink = useRef(false)
     
@@ -30,8 +30,8 @@ function Criatividade(props) {
         const button = buttonRef.current;
         const clear = clearRef.current;
       /*   const penSize = penSizeRef.current; */
-        const input = inputRef.current;
-        const container = containerRef.current;
+        /* const input = inputRef.current;
+        const container = containerRef.current; */
         clear.addEventListener('click', () => {
             element.clear()
         })
@@ -98,12 +98,12 @@ function Criatividade(props) {
             e.target.style.cursor = 'crosshair'
         }
     })
-    const handlePen = {
+   /*  const handlePen = {
         y: 0,
         size: 10,
         Boolean: false,
         moveY: 0,
-    }
+    } */
     
 
     

@@ -12,6 +12,7 @@
     height:min-content;
     display: grid;
     border: 1px solid black;
+    padding-top: 500px;
     
 }
 .grid{
