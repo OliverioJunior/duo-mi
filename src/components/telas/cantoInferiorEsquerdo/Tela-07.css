@@ -6,15 +6,13 @@
     align-items: center;
     justify-content: center;
 }
-/* .giz{
-    background-image: url("../../../imagens/06/GizDeCera.png");
-    position:absolute;
-    width:527px;
-    height:295px;
-    background-size: cover;
-    transform: translate(-500px,150px)rotate(345deg);
-    z-index: 1000;
-} */
+.centerCantoInferior{
+    width: min-content;
+    height: min-content;
+    margin:auto;
+    display: flex;
+    border: 1px solid black;
+}
 .criatividade{
     width: 1150px;
     height: 567px;
@@ -73,9 +71,32 @@
     cursor:pointer;
     margin-bottom: 10px;
     border: none;
-    fill: url(#MyGradient)
+    fill: url(#MyGradient);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.penSizeRef{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color: black;
+}
+.containerInput{
+    width: 2px;
+    height: 90px;
+    background-color: black;
+    margin-left: 23px;
+    
+}
+.inputPen{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: -5px;
+    cursor:pointer;
+}
 .erase{
     width:var(--dimensao);
     height:var(--dimensao);

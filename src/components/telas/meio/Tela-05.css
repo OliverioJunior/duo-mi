@@ -1,12 +1,22 @@
 
 .meio{
-    min-width:1000px;
-    min-width: 700px;
+    width: 100vw;
+    height: 100vh;
     grid-area:tela05;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+}
+.centerMeio{
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
 .fotoPrincipal{
     background-image: url("../../../imagens/02/DuoMi.png");

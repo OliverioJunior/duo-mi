@@ -1,10 +1,19 @@
 .cantoSuperiorDireito{
-    min-width:1000px;
-    min-width: 700px;
+    width:100vw;
+    height:100vh;
     grid-area:tela03;
     display: flex;
     align-items: center;
-    justify-content:flex-end;
+    justify-content:center;
+    border: 1px solid black;
+}
+.PcSemColapsar{
+    margin: auto;
+    width:min-content;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .fotoDeFundo{
     background-image: url("../../../imagens/NOVOS-ELEMENTOS/03-ATENDIMENTO/PC-COMPLETO.png");

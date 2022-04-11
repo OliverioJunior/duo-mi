@@ -14,16 +14,13 @@ const Tela_01 = () => {
         <div className='cantoSuperiorEsquerdo'>
             <div id="quemsomos"  className=" Estatico  grid">
                 <FotoEmily/>
-                <div className="emilyNome">
-                    
-                </div>
+                <div className="emilyNome" />
                 <div className='Texto' >
                     <h1>Clique na <span>imagem</span> para conhecer essa <span>dupla</span></h1>
                 </div>
                 <FotoDupla/>
                 <FotoTamis/>
-               
-            </div>
+             </div>
         </div>
     )
 }

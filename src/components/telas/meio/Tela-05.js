@@ -12,8 +12,10 @@ export default  function Tela_05(props){
   })
   return (
     <div ref={firstRef} className="meio">
-      <div className="fotoPrincipal" />
-      <Navbar className='navBarra' />
+      <div className="centerMeio">
+        <div className="fotoPrincipal" />
+        <Navbar className='navBarra' />
+      </div>
     </div>
   )
 }
