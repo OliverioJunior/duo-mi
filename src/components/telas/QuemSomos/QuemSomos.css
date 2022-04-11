@@ -2,6 +2,8 @@
     width:100vw;
     height: 100vh;
     grid-area: tela01;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
 }
 .Estatico{

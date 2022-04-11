@@ -36,16 +36,23 @@ function Criatividade(props) {
             element.clear()
         })
         button.addEventListener('click',()=>{
-            link.current = element.getDataURL()
-            bolleanLink.current = true
+            if(Globais.setDrawing){
+                link.current = element.getDataURL()
+                bolleanLink.current = true
+            }
            })
-        container.addEventListener('mousedown',(e)=>{
-            handlePen.Boolean = true;
-            handlePen.y = e.clientY;
+     /*    container.addEventListener('mousedown',(e)=>{
+            if(Globais.setDrawing){
+                handlePen.Boolean = true;
+                handlePen.y = e.clientY;
+            }
          })
-        container.addEventListener('mouseup',(e)=>{
-            handlePen.Boolean = false;
-            return
+        container.addEventListener('mouseup',()=>{
+            if(Globais.setDrawing){
+                handlePen.Boolean = false;
+                handlePen.moveY = 0
+                return
+            }
         })
         container.addEventListener('mousemove',(e)=>{
             if(handlePen.Boolean){
@@ -56,7 +63,7 @@ function Criatividade(props) {
                     input.style.transform = `translateY(${size*1.5}px)`
             }
             
-        })
+        }) */
     })
     async function  download(){
          
@@ -125,12 +132,12 @@ function Criatividade(props) {
                         {Icons.clear}
                     </button>
                     <button ref = {penSizeRef} className='arrowLeft'>
-                    {/*  {Icons.arrowLeft} */}
-                        <div className="penSizeRef"></div>
+                     {Icons.arrowLeft}
+                       {/*  <div className="penSizeRef"></div>
                         <div ref = {containerRef} className="containerInput">
                         <input ref = {inputRef} className="inputPen"type="value" name="pensize" value={handlePen.size} 
                         />
-                        </div>
+                        </div> */}
                     </button>
                     <button className='erase' onClick = {()=> setColor('#ffff')}>{Icons.erase}</button>
                     <button ref={buttonRef} className='salvarDesenho' onClick={download}/>
