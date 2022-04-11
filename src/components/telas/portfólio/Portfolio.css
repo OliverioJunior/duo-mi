@@ -1,0 +1,72 @@
+.cantoInferiorDireito{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"raleway";
+    font-size:bold;
+    border: 1px solid black;
+}
+.tvSemColapsar{
+    margin: auto;
+    width:min-content;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.fraseTv{
+    text-transform: uppercase;
+    width: auto;
+    height: min-content;
+    font-weight :700;
+    font-size: 1.3em;
+   
+}
+.fraseTv{
+    color:var(--primaria);
+   
+}
+.fraseTv > span {
+    color: var(--secundaria);
+}
+
+
+.televisor{
+    background-image: url("../../../imagens/NOVOS-ELEMENTOS/04-PORTFÓLIO/tv.png");
+    background-size: cover;
+    width: 700px;
+    height:415px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoPlay{
+    
+    width: 180px;
+    height: 180px;
+    align-self: center;
+    transform: translate(-70px,-10px);
+    background: rgba(138, 22, 47, 0.479);
+    border-radius: 50%;
+    box-decoration-break: none;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+} 
+.play svg{
+    height: 100px;
+    fill:var(--terciaria);
+    transform: translate(5px);
+} 
+.play svg:hover{
+    fill:#eec40cdc;
+} 
+
+.botaoPlay:hover{
+    background-color:#b71b4280;
+}

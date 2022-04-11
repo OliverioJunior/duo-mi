@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import React,{useState, useRef, useLayoutEffect} from 'react';
 import './BackGround.css';
-import { Tela_01, Tela_02, Tela_03, Tela_07, Tela_09 } from './telas/index.js';
+import { Tela_01, Tela_02, Tela_03, Tela_07, Portfolio } from './telas/index.js';
 import Tela_05 from './telas/meio/Tela-05';
 import Globais from './Globais';
 /* import ContentLoader,{Facebook} from 'react-content-loader'; */
@@ -118,7 +118,7 @@ function BackGround() {
                     <Tela_03 />
                     <div className="cantoMeioDireito">
                     </div>
-                    <Tela_09 />
+                    <Portfolio />
                 </div>
             </>
                

@@ -1,0 +1,68 @@
+.meioSuperior {
+  grid-area: tela02;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+:root {
+  --width: 100px;
+  --height: 120px;
+}
+.centermeiosuperior{
+  width: min-content;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+   border: 1px solid black;
+}
+
+.meioFrase {
+  display:flex;
+  height: 200px;
+  width: auto;
+  color: var(--primaria);
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  align-items:center;
+  text-transform:uppercase;
+}
+
+.redesSociais {
+  display: flex;
+  width: auto;
+  justify-self: center;
+  align-self: center;
+}
+.instagram {
+  background-image: url("../../../imagens/NOVOS-ELEMENTOS/02-REDES-SOCIAIS/INSTAGRAM.png");
+  background-size: cover;
+  width: var(--width);
+  height: var(--height);
+  margin-left: 20px;
+}
+.behance {
+  background-image: url("../../../imagens/NOVOS-ELEMENTOS/02-REDES-SOCIAIS/BEHANCE.png");
+  background-size: cover;
+  width: var(--width);
+  height: var(--height);
+  margin-left: 20px;
+}
+.facebook {
+  background-image: url("../../../imagens/NOVOS-ELEMENTOS/02-REDES-SOCIAIS/FACEBOOK.png");
+  background-size: cover;
+  width: var(--width);
+  height: var(--height);
+  margin-left: 20px;
+}
+.tiktok {
+  background-image: url("../../../imagens/NOVOS-ELEMENTOS/02-REDES-SOCIAIS/TIKTOK.png");
+  background-size: cover;
+  width: var(--width);
+  height: var(--height);
+  margin-left: 20px;
+}
