@@ -2,15 +2,10 @@ import React from "react";
 import FotoDupla from "./fotoDupla/FotoDupla";
 import FotoEmily from "./fotoEmily/FotoEmily";
 import FotoTamis from "./fotoTamis/FotoTamis";
-import "./Tela-01.css"
+import "./QuemSomos.css"
 
-const Tela_01 = () => {
-
-    
-
-
-    return (
-
+const QuemSomos = () => {
+     return (
         <div className='cantoSuperiorEsquerdo'>
             <div id="quemsomos"  className=" Estatico  grid">
                 <FotoEmily/>
@@ -25,5 +20,5 @@ const Tela_01 = () => {
     )
 }
 
-export default Tela_01
+export default QuemSomos;
 

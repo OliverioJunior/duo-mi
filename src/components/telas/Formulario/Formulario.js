@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Tela-03.css";
+import "./Formulario.css";
 
-function Tela_03() {
+function Formulario() {
    
     return (
         <div id='atendimento' className='cantoSuperiorDireito'>
@@ -17,4 +17,4 @@ function Tela_03() {
     )
 }
 
-export default Tela_03
+export default Formulario;

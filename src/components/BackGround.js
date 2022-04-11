@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import React,{useState, useRef, useLayoutEffect} from 'react';
 import './BackGround.css';
-import { Tela_01, Tela_02, Tela_03, Tela_07, Portfolio } from './telas/index.js';
+import { QuemSomos, Tela_02, Formulario, Tela_07, Portfolio } from './telas/index.js';
 import Tela_05 from './telas/meio/Tela-05';
 import Globais from './Globais';
 /* import ContentLoader,{Facebook} from 'react-content-loader'; */
@@ -108,14 +108,14 @@ function BackGround() {
                     <div ref={quadradoRef}className= {show ? "quadradoNone" : "quadrado"}  onClick={buttonScroll} >
                         <h1>DuoMi</h1>
                     </div>
-                    <Tela_01 />
+                    <QuemSomos />
                     <div className="cantoMeioEsquerdo" />
                     <Tela_07 />
                     <Tela_02 />
                     <Tela_05 ref={focusRef}/>
                     <div className="meioInferior">
                     </div>
-                    <Tela_03 />
+                    <Formulario />
                     <div className="cantoMeioDireito">
                     </div>
                     <Portfolio />
