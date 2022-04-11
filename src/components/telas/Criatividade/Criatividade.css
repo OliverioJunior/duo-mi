@@ -16,11 +16,9 @@
 .criatividade{
     width: 1150px;
     height: 567px;
-    /* background-image: url("../../../imagens/NOVOS-ELEMENTOS/05-CRIATIVIDADE/Criatividade.png");
-    background-size: cover; */
     border-radius:50px; 
     border:10px solid transparent; 
-    background:linear-gradient(90deg,var(--terciaria),var(--secundaria),var(--primaria)) border-box; /*3*/
+    background:linear-gradient(90deg,var(--terciaria),var(--secundaria),var(--primaria)) border-box; 
     align-items: center;
     justify-content: center;
     display: flex;
