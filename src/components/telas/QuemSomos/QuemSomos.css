@@ -20,10 +20,7 @@
    "emily emily emilyn emilyn emilyn ."
    "emily emily texto texto texto TamisNome"
    "fotodupla fotodupla tamis tamis tamis TamisNome" 
-   "fotodupla fotodupla tamis tamis tamis TamisNome" 
-   
-   
-   ;
+   "fotodupla fotodupla tamis tamis tamis TamisNome";
    grid-template-columns: 150px 200px 150px 150px 150px 150px;
    grid-template-rows: 150px 150px 150px 150px 150px 150px;
 }

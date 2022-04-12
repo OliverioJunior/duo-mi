@@ -1,0 +1,16 @@
+.celBackground{
+    display:none;
+}
+
+@media (max-width: 800px) {
+    .back-ground{
+        display: none
+    }
+    .celBackground{
+        display:flex;
+    }
+    .fotoPrincipal{
+        width: 247px;
+        height: 263px;
+    }
+}

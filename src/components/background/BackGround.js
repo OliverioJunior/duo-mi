@@ -1,9 +1,10 @@
 /* eslint-disable react/jsx-pascal-case */
 import React,{useState, useRef, useLayoutEffect} from 'react';
 import './BackGround.css';
-import { QuemSomos, RedesSociais, Formulario, Criatividade, Portfolio } from './telas/index.js';
-import Tela_05 from './telas/meio/Tela-05';
-import Globais from './Globais';
+import './responsive.css';
+import { QuemSomos, RedesSociais, Formulario, Criatividade, Portfolio } from '../telas/index.js';
+import Tela_05 from '../telas/meio/Meio';
+import Globais from '../Globais';
 /* import ContentLoader,{Facebook} from 'react-content-loader'; */
 
 function BackGround() {

@@ -3,7 +3,7 @@ import FotoDupla from "./fotoDupla/FotoDupla";
 import FotoEmily from "./fotoEmily/FotoEmily";
 import FotoTamis from "./fotoTamis/FotoTamis";
 import "./QuemSomos.css"
-
+import "./responsive.css"
 const QuemSomos = () => {
      return (
         <div className='cantoSuperiorEsquerdo'>

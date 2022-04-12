@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+   .navbar-container{
+        font-size: xx-small;
+        width: 100vw;
+    }
+    .nav-menu{
+        width: 100vw;
+    }
+}

@@ -1,0 +1,23 @@
+@media (max-width: 800px) {
+    .grid {
+       display: flex;
+       flex-direction: column;
+   }
+   .Emily{
+    width: 150px;
+    height: 145px;
+    justify-self: start ;
+   }
+   .emilyNome{
+    width: 182px;
+    height: 14px;
+   }
+   .tamis{
+    width: 179px;
+    height: 175px;
+   }
+   .fotoDupla{
+    width: 201px;
+    height: 146px;
+   }
+ }

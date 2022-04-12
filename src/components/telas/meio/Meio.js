@@ -1,9 +1,9 @@
 import React,{useRef, useLayoutEffect} from "react"
-import "./Tela-05.css"
-import { Navbar } from "../../Navbar"
+import "./Meio.css"
+import { Navbar } from "../../navbar/Navbar"
 import Globais from "../../Globais";
-
-export default  function Tela_05(props){
+import "./responsive.css"
+export default  function Meio(props){
   const firstRef = useRef();
   useLayoutEffect(() => {
     const element = firstRef.current;

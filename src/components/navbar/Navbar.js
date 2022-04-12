@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './Navbar.css'
-import Globais from './Globais'
+import Globais from '../Globais'
+import "./responsive.css"
 
 window.addEventListener('click', () => {
     const menu = document.querySelectorAll('.nav-menu a')

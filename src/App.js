@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
-import BackGround from './components/BackGround';
+import { BrowserRouter as Router} from 'react-router-dom';
+import BackGround from './components/background/BackGround';
+import CelBackground from './components/celBackground/celBackground';
 function App() {
   return (
     <div>
     <Router>
        <BackGround /> 
-       <Switch>
-        <Route path='/' exact />
-      </Switch>
+       <CelBackground/>
       </Router>
     </div>
   );
