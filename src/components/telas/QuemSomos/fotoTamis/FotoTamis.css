@@ -34,7 +34,8 @@
   transform: rotateY(180deg);
   z-index: 0;
   border: 10px solid;
-  border-image: repeating-linear-gradient(90deg,var(--terciaria),var(--secundaria),var(--primaria)) 60;
+  border-image: linear-gradient(90deg,var(--primaria),var(--secundaria),var(--terciaria));
+  border-image-slice: 1;
   cursor: pointer;
 }
 
