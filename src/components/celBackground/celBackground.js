@@ -4,8 +4,10 @@ import { QuemSomos, RedesSociais, Meio, Formulario, Criatividade, Portfolio } fr
 export default function celBackground() {
   return (
     <div className='celBackground'>
-     <Meio/>
-    
+      <div className='container-meio'>
+        <Meio/>
+      </div>
+     <QuemSomos/>
     
     </div>
   )

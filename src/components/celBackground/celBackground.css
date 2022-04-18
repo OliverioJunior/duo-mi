@@ -5,12 +5,31 @@
 @media (max-width: 800px) {
     .back-ground{
         display: none
+        
+    }
+    .quadrado{
+        display: none;
     }
     .celBackground{
         display:flex;
+        flex-direction: column;
+        width: 100vw;
+        height: max-content;
+    }
+    .container-meio{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
     }
     .fotoPrincipal{
         width: 247px;
         height: 263px;
     }
+    .navbar{
+        padding-top: 50px;
+    }
+
 }
