@@ -7,8 +7,8 @@ export default  function Meio(props){
   const firstRef = useRef();
   useLayoutEffect(() => {
     const element = firstRef.current;
-    Globais.loadTop = element.offsetTop;
-    Globais.loadLeft = element.offsetLeft;
+    Globais.loadTop = element.offsetTop > 0 ? element.offsetTop : Globais.loadTop;
+    Globais.loadLeft = element.offsetLeft > 0 ? element.offsetLeft : Globais.loadLeft;
   })
   return (
     <div ref={firstRef} className="meio">
