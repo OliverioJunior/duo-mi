@@ -1,33 +1,38 @@
-import React, { useRef } from 'react'
+import React, { useRef, useContext } from 'react'
 import './Navbar.css'
-import Globais from '../Globais'
+/* import Globais from '../Globais' */
 import "./responsive.css"
+import { ScrollMenu } from '../../context/ScrollMenu'
 
-window.addEventListener('click', () => {
-    const menu = document.querySelectorAll('.nav-menu a')
-    menu.forEach(i => {
-        i.addEventListener('click', (e) => {
-            e.preventDefault()
-            const element = e.target;
-            const id = element.getAttribute('href');
-            const Top = document.querySelector(id).offsetTop;
-            const Left = document.querySelector(id).offsetLeft;
-            Globais.resLeft = Left
-            Globais.resTop = Top
-            Globais.setTela = true;
-            window.scrollTo({   
-                top: Globais.resTop,
-                left: Globais.resLeft,
-                behavior: 'smooth'
-            })
-            
-        })
-    })
-})
+
 
 
 function Navbar() {
-  
+    const {offLeft, setOffLeft} = useContext(ScrollMenu);
+    const {offTop, setOffTop} = useContext(ScrollMenu);
+
+
+    window.addEventListener('click', () => {
+        const menu = document.querySelectorAll('.nav-menu a')
+        menu.forEach(i => {
+            i.addEventListener('click', (e) => {
+                e.preventDefault()
+                const element = e.target;
+                const id = element.getAttribute('href');
+                const Top = document.querySelector(id).offsetTop;
+                const Left = document.querySelector(id).offsetLeft;
+                setOffLeft(Left);
+                setOffTop(Top);
+                window.scrollTo({   
+                    top: offTop,
+                    left:  offLeft,
+                    behavior: 'smooth'
+                })
+                
+            })
+        })
+    })
+
     const animaRef = useRef(null);
     return (
         <>

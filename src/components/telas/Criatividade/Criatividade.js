@@ -1,21 +1,20 @@
-import React, { useState, useRef, useLayoutEffect} from "react";
+import React, { useState, useRef, useLayoutEffect, useContext} from "react";
 import "./Criatividade.css"
-import Globais from "../../Globais";
 import CanvasDraw from "react-canvas-draw";
 import axios from "axios";
 import Icons from './const';
-
+import { ScrollMenu } from '../../../context/ScrollMenu'
 
 
 
 function Criatividade(props) {
 
     const [icon, setIcon] = useState(false);
-    const 
-    icons = Globais.setDrawing ? Icons.pen : Icons.hand;
+    const {drawing, setDrawing} = useContext(ScrollMenu);
+    const icons = drawing ? Icons.pen : Icons.hand;
     const [draw, setDraw] = useState(true);
     const [color, setColor] = useState("#000");
-    const [size, setSize] = useState(5);
+    const [size] = useState(5);
     const canvasRef = useRef(null);
     const buttonRef = useRef(null);
     const clearRef = useRef(null);
@@ -36,7 +35,7 @@ function Criatividade(props) {
             element.clear()
         })
         button.addEventListener('click',()=>{
-            if(Globais.setDrawing){
+            if(drawing){
                 link.current = element.getDataURL()
                 bolleanLink.current = true
             }
@@ -87,14 +86,14 @@ function Criatividade(props) {
         }
     }
     ;
-    function setDrawing() {
-        Globais.setDrawing = !Globais.setDrawing;
+    function setDrawingg() {
+        setDrawing(!drawing);
         setDraw(!draw)
         setIcon(!icon);
     }
 
     window.addEventListener('mouseover', (e) => {
-        if (Globais.setDrawing && e.target.classList.contains('desenhoArea')) {
+        if (drawing && e.target.classList.contains('desenhoArea')) {
             e.target.style.cursor = 'crosshair'
         }
     })
@@ -124,7 +123,7 @@ function Criatividade(props) {
                 />
                 </div>
                 <div className='selecionarCores'>
-                    <button className='desenhar' onClick={setDrawing}>
+                    <button className='desenhar' onClick={setDrawingg}>
                         {icons}
                     </button>
                     <input type = "color" className='palheta' onChange = { e => setColor(e.target.value)} />

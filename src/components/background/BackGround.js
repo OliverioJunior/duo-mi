@@ -1,18 +1,21 @@
 /* eslint-disable react/jsx-pascal-case */
-import React,{useState, useRef, useLayoutEffect} from 'react';
+import React,{useState, useRef, useLayoutEffect, useContext } from 'react';
 import './BackGround.css';
-import './responsive.css';
 import { QuemSomos, RedesSociais, Formulario, Criatividade, Portfolio } from '../telas/index.js';
-import Tela_05 from '../telas/meio/Meio';
-import Globais from '../Globais';
+import Meio from '../telas/meio/Meio';
 /* import ContentLoader,{Facebook} from 'react-content-loader'; */
-
+import { ScrollMenu } from '../../context/ScrollMenu'
 function BackGround() {
     const body = document.querySelector('body');
     const [show, setShow] = useState(true);
+    const {loadTop} = useContext(ScrollMenu);
+    const {loadLeft} = useContext(ScrollMenu);
+    const {offLeft, setOffLeft} = useContext(ScrollMenu);
+    const {offTop, setOffTop} = useContext(ScrollMenu)
+    const {drawing} = useContext(ScrollMenu)
     const quadradoRef = useRef(null);
     const loadRef = useRef(null);
-    const focusRef = useRef(null);
+    
     const mouse = {
         x: 0,
         y: 0,
@@ -26,8 +29,11 @@ function BackGround() {
 
         useLayoutEffect(() => {
           
-          window.addEventListener('load', () => {
-              window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
+          window.addEventListener('DOMContentLoaded', () => {
+             
+              console.log('carregou') 
+              console.log(loadTop)
+              buttonScroll()
               fineshLoad.current = true;
               
            })
@@ -50,15 +56,15 @@ function BackGround() {
            
         }) 
          function buttonScroll(){
-            window.scrollTo({ top: Globais.loadTop, left: Globais.loadLeft, behavior: 'smooth' })
+            window.scrollTo({ top: loadTop, left: loadLeft, behavior: 'smooth' })
             setShow(true);
         }
         
          window.addEventListener('mousedown', (e) => {
             e.preventDefault();
-            if (Globais.setDrawing === false) {
-                Globais.resRight = window.scrollX;
-                Globais.resTop = window.scrollY;
+            if (drawing === false) {
+                setOffLeft(window.scrollX);
+                setOffTop(window.scrollY);
                 mouse.x = e.clientX;
                 mouse.y = e.clientY;
                 mouse.mouseMove = true;
@@ -68,7 +74,7 @@ function BackGround() {
         })
         window.addEventListener('mouseup', (e) => {
             e.preventDefault();
-            if (Globais.setDrawing === false) {
+            if (drawing === false) {
                 if(e.target.className === "meio"){
                     setShow(true)
                 }else{
@@ -87,14 +93,14 @@ function BackGround() {
             //prevent mouse comportament 
             
             e.preventDefault();
-            if(Globais.setDrawing){
+            if(drawing){
                 setShow(true)
                 return
             }
-            if (mouse.mouseMove && Globais.setDrawing === false) {
+            if (mouse.mouseMove && drawing === false) {
                 const x = e.clientX - mouse.x;
                 const y = e.clientY - mouse.y;
-                window.scrollTo(Globais.resRight - x, Globais.resTop - y, { behavior: 'smooth' });
+                window.scrollTo(offLeft - x, offTop - y, { behavior: 'smooth' });
             }
         })
       
@@ -114,7 +120,7 @@ function BackGround() {
                     <div className="cantoMeioEsquerdo" />
                     <Criatividade />
                     <RedesSociais />
-                    <Tela_05 ref={focusRef}/>
+                    <Meio/>
                     <div className="meioInferior">
                     </div>
                     <Formulario />

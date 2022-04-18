@@ -1,14 +1,17 @@
-import React,{useRef, useLayoutEffect} from "react"
+import React,{useRef, useLayoutEffect, useContext} from "react"
 import "./Meio.css"
 import { Navbar } from "../../navbar/Navbar"
-import Globais from "../../Globais";
+import { ScrollMenu } from '../../../context/ScrollMenu'
 import "./responsive.css"
 export default  function Meio(props){
   const firstRef = useRef();
+  const {loadTop, setLoadTop} = useContext(ScrollMenu);
+  const {loadLeft, setLoadLeft} = useContext(ScrollMenu);
   useLayoutEffect(() => {
     const element = firstRef.current;
-    Globais.loadTop = element.offsetTop;
-    Globais.loadLeft = element.offsetLeft;
+    setLoadTop(element.offsetTop);
+    setLoadLeft(element.offsetLeft);
+    console.log(loadTop,loadLeft)
   })
   return (
     <div ref={firstRef} className="meio">
