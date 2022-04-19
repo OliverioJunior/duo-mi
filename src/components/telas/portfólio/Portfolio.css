@@ -6,7 +6,6 @@
     align-items: center;
     font-family:"raleway";
     font-size:bold;
-    border: 1px solid black;
     grid-area:tela09;
 }
 .tvSemColapsar{
@@ -17,7 +16,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 .fraseTv{
     text-transform: uppercase;

@@ -1,0 +1,12 @@
+.emilyNome{
+    padding-top: 30px;
+    display: flex;
+    grid-area: emilyn;
+    /* transform: translate(-55px); */
+    background-image: url('../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/NOME\ EMILY.png');
+    background-size:cover;
+    width:330px;
+    height: 48px;
+    justify-self: center;
+    
+}

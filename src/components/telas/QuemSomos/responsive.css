@@ -1,21 +1,30 @@
 @media (max-width: 800px) {
   .grid{
-   grid-template-areas: 
-   "emily emily emilyn emilyn emilyn ."
-   "emily emily texto texto texto TamisNome"
-   "fotodupla fotodupla tamis tamis tamis TamisNome" 
-   "fotodupla fotodupla tamis tamis tamis TamisNome";
-   grid-template-columns: 80px 80px 80px 80px 80px 80px;
-   grid-template-rows: repeat(7,80px)
-    }
+    display: flex;
+  }
 
     .Emily{
       width:100px;
       height:96px;
+      margin-left:20px;
+    }
+    .emilyContainer{
+     margin:0;
+     justify-content: flex-start;
     }
     .emilyNome{
       width:175px;
-      height:11.54px;
+      height:41.54px;
+      padding:0;
       background-size: cover;
+    }
+    .seta_curva{
+      width: 69px;
+      height: 28px;
+      transform: translate(94px,-35px);
+    }
+    .balao{
+      width:39px;
+      height:32px;
     }
  }

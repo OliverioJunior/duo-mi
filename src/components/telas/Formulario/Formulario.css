@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    border: 1px solid black;
 }
 .PcSemColapsar{
     margin: auto;
@@ -14,7 +13,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 .fotoDeFundo{
     background-image: url("../../../imagens/NOVOS-ELEMENTOS/03-ATENDIMENTO/PC-COMPLETO.png");

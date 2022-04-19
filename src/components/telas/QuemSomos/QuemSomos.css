@@ -5,13 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 .Estatico{
     width: min-content;
     height:min-content;
     display: grid;
-    border: 1px solid black;
     padding-top: 500px;
     
 }
@@ -33,18 +31,7 @@
 .Texto h1 span:last-child{
     color: var(--terciaria);
 }  
-.emilyNome{
-    padding-top: 30px;
-    display: flex;
-    grid-area: emilyn;
-    /* transform: translate(-55px); */
-    background-image: url('../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/NOME\ EMILY.png');
-    background-size:cover;
-    width:330px;
-    height: 48px;
-    justify-self: center;
-    
-}
+
 .Texto{
     grid-area: texto;
     color: var(--primaria);

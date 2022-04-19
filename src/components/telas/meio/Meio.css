@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 .centerMeio{
     width: min-content;
@@ -16,7 +15,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 .fotoPrincipal{
     background-image: url("../../../imagens/02/DuoMi.png");
