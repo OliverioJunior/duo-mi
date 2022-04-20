@@ -6,11 +6,19 @@
     .Emily{
       width:100px;
       height:96px;
+      margin:0;
       margin-left:20px;
+      padding:0;
     }
     .emilyContainer{
      margin:0;
-     justify-content: flex-start;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transform: rotate(0deg);
+     width: 50%;
+     height: 106px;
+     border:1px solid black; 
     }
     .emilyNome{
       width:175px;
@@ -19,12 +27,13 @@
       background-size: cover;
     }
     .seta_curva{
-      width: 69px;
-      height: 28px;
+      width: 51px;
+      height: 21px;
       transform: translate(94px,-35px);
     }
     .balao{
-      width:39px;
+      width:45px;
       height:32px;
+      transform: translate(-16px, 14px) rotate(15deg);
     }
  }

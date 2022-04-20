@@ -44,3 +44,27 @@
     margin-right: 17px;
     transform: translate(-20px, 30px) rotate(6deg);
 }
+
+@media (max-width: 800px) {
+    .containerDupla{
+        width:50%;
+        height:90px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border: solid black;
+        margin-left:0;
+        transform:rotate(0deg);
+    }
+    .fotoDupla{
+        width: 114px;
+        height: 82px;
+        transform: rotate(359deg);
+    }
+    .fotoDuplaCursor{
+        width: 25px;
+        height: 29px;
+        transform: translate(-4px, 19px) rotate(6deg)
+    }
+
+}
