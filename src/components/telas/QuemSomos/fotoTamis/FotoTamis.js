@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./FotoTamis.css";
-
+import NomeTamis from './nomeTamis/NomeTamis';
 function FotoTamis() {
     const [click, setClick] = useState(true);
     const girar = (e) => {
@@ -21,13 +21,7 @@ function FotoTamis() {
                 </div>
                 <div className="tamisDescricao" />
             </div>
-            <div className='tamisNome'>
-                <div className='tamisT' />
-                <div className='tamisA' />
-                <div className='tamisM' />
-                <div className='tamisI' />
-                <div className='tamisS' />
-            </div>
+            <NomeTamis/>         
         </>
     );
 };
