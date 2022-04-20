@@ -1,0 +1,34 @@
+.Texto h1 span:first-child{
+    color: var(--secundaria);
+} 
+.Texto h1 span:last-child{
+    color: var(--terciaria);
+}  
+
+.Texto{
+    grid-area: texto;
+    color: var(--primaria);
+    width: 430px;
+    text-align: center;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-self: center;
+}
+
+.Texto > h1{
+    align-content: end;
+}
+
+@media (max-width: 800px) {
+    .Texto >h1 {
+        font-size: 1em;
+        width: 183px;
+        margin:auto;
+    }
+    .Texto{
+        width:100%;
+        justify-self: center;
+    }
+}
