@@ -15,7 +15,7 @@ function Criatividade(props) {
     icons = Globais.setDrawing ? Icons.pen : Icons.hand;
     const [draw, setDraw] = useState(true);
     const [color, setColor] = useState("#000");
-    const [size, setSize] = useState(5);
+    const [size] = useState(5);
     const canvasRef = useRef(null);
     const buttonRef = useRef(null);
     const clearRef = useRef(null);
