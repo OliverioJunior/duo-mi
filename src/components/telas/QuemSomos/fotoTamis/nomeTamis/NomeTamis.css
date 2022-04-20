@@ -1,0 +1,11 @@
+.tamisNome {
+    width: 60px;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    grid-area: TamisNome;
+    margin-top: 50px;
+    transform: translate(-50px,50px);
+    background-image: url("../../../../../imagens/NOVOS-ELEMENTOS/01-QUEM-SOMOS/NOME\ TAMIS.png");
+    background-size:cover;
+}
