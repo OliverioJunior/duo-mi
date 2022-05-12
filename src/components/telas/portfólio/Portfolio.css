@@ -60,7 +60,7 @@
 .play svg{
     height: 100px;
     fill:var(--terciaria);
-    transform: translate(5px);
+    transform: translate(59px , 34px);
 } 
 .play svg:hover{
     fill:#eec40cdc;

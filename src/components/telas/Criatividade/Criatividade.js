@@ -19,9 +19,6 @@ function Criatividade(props) {
     const canvasRef = useRef(null);
     const buttonRef = useRef(null);
     const clearRef = useRef(null);
-    const penSizeRef = useRef(null);
-   /*  const inputRef = useRef(null);
-    const containerRef = useRef(null); */
     let link = useRef(null);
     let bolleanLink = useRef(false)
     
@@ -29,9 +26,6 @@ function Criatividade(props) {
         const element = canvasRef.current;
         const button = buttonRef.current;
         const clear = clearRef.current;
-      /*   const penSize = penSizeRef.current; */
-        /* const input = inputRef.current;
-        const container = containerRef.current; */
         clear.addEventListener('click', () => {
             element.clear()
         })
@@ -41,29 +35,7 @@ function Criatividade(props) {
                 bolleanLink.current = true
             }
            })
-     /*    container.addEventListener('mousedown',(e)=>{
-            if(Globais.setDrawing){
-                handlePen.Boolean = true;
-                handlePen.y = e.clientY;
-            }
-         })
-        container.addEventListener('mouseup',()=>{
-            if(Globais.setDrawing){
-                handlePen.Boolean = false;
-                handlePen.moveY = 0
-                return
-            }
-        })
-        container.addEventListener('mousemove',(e)=>{
-            if(handlePen.Boolean){
-                handlePen.moveY = e.clientY - handlePen.y;
-               
-               console.log(handlePen.moveY + "ponto")
-                    setSize(size + handlePen.moveY)
-                    input.style.transform = `translateY(${size*1.5}px)`
-            }
-            
-        }) */
+    
     })
     async function  download(){
          
@@ -98,14 +70,8 @@ function Criatividade(props) {
             e.target.style.cursor = 'crosshair'
         }
     })
-   /*  const handlePen = {
-        y: 0,
-        size: 10,
-        Boolean: false,
-        moveY: 0,
-    } */
-    
 
+  
     
 
     return (
@@ -130,14 +96,6 @@ function Criatividade(props) {
                     <input type = "color" className='palheta' onChange = { e => setColor(e.target.value)} />
                     <button ref = {clearRef} className='clear'>
                         {Icons.clear}
-                    </button>
-                    <button ref = {penSizeRef} className='arrowLeft'>
-                     {Icons.arrowLeft}
-                       {/*  <div className="penSizeRef"></div>
-                        <div ref = {containerRef} className="containerInput">
-                        <input ref = {inputRef} className="inputPen"type="value" name="pensize" value={handlePen.size} 
-                        />
-                        </div> */}
                     </button>
                     <button className='erase' onClick = {()=> setColor('#ffff')}>{Icons.erase}</button>
                     <button ref={buttonRef} className='salvarDesenho' onClick={download}/>
