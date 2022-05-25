@@ -111,7 +111,20 @@ function BackGround() {
                         <h1>DuoMi</h1>
                     </div>
                     <QuemSomos />
-                    <div className="cantoMeioEsquerdo" />
+                    <div className="cantoMeioEsquerdo" >
+                        <div className='cantoMeioEsquerdoDiv'>
+                            <div className='cantoMeioEsquerdoDivDiv'>
+                                <div className='divStart'>
+                                </div>
+                                <div className='divSmile'>
+                                </div>
+                                <div className='divCubs'>
+                                </div>
+                                <div className='divHeart'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <Criatividade />
                     <RedesSociais />
                     <Tela_05 ref={focusRef}/>

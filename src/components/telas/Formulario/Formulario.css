@@ -22,7 +22,7 @@
     margin-right: 100px;
 }
 .linkFor{
-    background-image: url("../../../imagens/04/CURSOR\ -\ TV.png") ; 
+    background-image:url(../../../imagens/05/CURSOR-QUEM\ SOMOS.png);
     background-size: cover;
     width: 84px;
     height: 95px;
@@ -34,6 +34,7 @@
 .cantoSuperiorDireito h1 {
     color: var(--primaria);
     width: 260px;
+    font-size: 1.3em;
     text-transform: uppercase;
     
 }
