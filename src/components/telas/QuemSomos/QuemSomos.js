@@ -15,10 +15,25 @@ const QuemSomos = () => {
                 <Texto/>
                 <FotoDupla/>
                 <FotoTamis/>
-             </div>
+                <div className="orkut">
+                </div>
+            </div>
+
         </div>
     )
 }
 
 export default QuemSomos;
 
+/*     <div className='cantoMeioEsquerdoDiv'>
+                            <div className='cantoMeioEsquerdoDivDiv'>
+                                <div className='divStart'>
+                                </div>
+                                <div className='divSmile'>
+                                </div>
+                                <div className='divCubs'>
+                                </div>
+                                <div className='divHeart'>
+                                </div>
+                            </div>
+                </div>*/

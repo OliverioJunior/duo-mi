@@ -14,8 +14,7 @@
 body {
     cursor:grab;
     overflow: hidden;
-    background-color: rgb(243, 241, 241);
-   
+
 } 
 .screenload{
     animation: blink 3s infinite  alternate;
@@ -75,21 +74,22 @@ body {
     display:none;
 }
 .back-ground{
-    min-width:4030px;
-    min-height: 2500px;
+    width: min-content;
+    height: min-content;
     
    
 }
  
 .back-ground{
+    background-image: url("../../imagens/NOVOS-ELEMENTOS/BRANCO-CINZA.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: grid;
     grid-template-areas: 
     "tela01 tela02 tela03"
     "tela04 tela05 tela06"
     "tela07 tela08 tela09";
     /* create grid symmetrical*/
-
-    background-color: rgb(243, 241, 241);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
    /*  grid-gap: 200px; */
@@ -109,60 +109,7 @@ body {
   background-position: center;
   
 }
-.cantoMeioEsquerdoDiv{
-  width: 100%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cantoMeioEsquerdoDivDiv{
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.divStart{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../imagens/NOVOS-ELEMENTOS/ORKUT-STAR.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.divHeart{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../imagens/NOVOS-ELEMENTOS/ORKUT-CORAÇÃO.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.divSmile{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../imagens/NOVOS-ELEMENTOS/ORKUT-SMILE.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.divCubs{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../imagens/NOVOS-ELEMENTOS/ORKUT-CUBO\ AZUL.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+
 
 
 

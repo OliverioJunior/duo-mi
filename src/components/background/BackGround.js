@@ -112,18 +112,7 @@ function BackGround() {
                     </div>
                     <QuemSomos />
                     <div className="cantoMeioEsquerdo" >
-                        <div className='cantoMeioEsquerdoDiv'>
-                            <div className='cantoMeioEsquerdoDivDiv'>
-                                <div className='divStart'>
-                                </div>
-                                <div className='divSmile'>
-                                </div>
-                                <div className='divCubs'>
-                                </div>
-                                <div className='divHeart'>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                     <Criatividade />
                     <RedesSociais />
