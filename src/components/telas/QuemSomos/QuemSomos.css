@@ -28,7 +28,8 @@
     width: 100vw;
     height: 100px;
     position:relative;
-    top:100%;
+    top:500%;
+    left:-100%;
 }
 
 
