@@ -7,7 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "assert": "^2.0.0",
-    "axios": "^0.26.1",
+    "axios": "^0.30.2",
     "blob": "^0.1.0",
     "buffer": "^6.0.3",
     "node-fetch": "^3.2.3",
