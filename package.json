@@ -17,8 +17,7 @@
     "react-dom": "^17.0.2",
     "react-fetch-hook": "^1.9.5",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "5.0.1",
-    "request": "^2.88.2",
+    "react-scripts": "^0.0.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -50,6 +49,7 @@
   },
   "devDependencies": {
     "react-redux": "^7.2.6",
-    "redux": "^4.1.2"
+    "redux": "^4.1.2",
+    "tough-cookie": "^4.1.3"
   }
 }
